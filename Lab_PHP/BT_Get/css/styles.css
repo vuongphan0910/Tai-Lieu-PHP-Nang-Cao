@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+#container{ width:990px; margin:auto}
+#header{ width:990px; height:150px; background-color:#9FC; margin:5px 0;}
+#left{ width:300px ; margin-right:5px;  min-height:650px; float:left; background-color:#CF9; }
+#left ul{ list-style:none; padding:15px; margin-bottom:25px; }
+#left ul a { text-decoration:none; color: #C60}
+#left ul li{ display:block;} 
+#right{ width:685px; min-height:650px ; float:left; background-color:#FF9;}
+#bottom{ clear:both; width:990px; height:150px; background-color:#9FC;}
