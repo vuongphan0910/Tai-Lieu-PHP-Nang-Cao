@@ -1,0 +1,19 @@
+﻿.daochieu{
+	width: 99%;  height: 600px;  
+	writing-mode: tb-rl;  
+	filter:flipH() flipV(); 
+	overflow-x:scroll;overflow-y:hidden; 
+	padding-top:10; padding-bottom:10;	
+	margin-left:0; margin-right:0; margin-top:0; margin-bottom:0;	
+}
+/* lr-tb    rl-tb       tb-rl     bt-rl    */
+.bd {overflow:hidden; margin-left:0; margin-top:0; margin-right:0; margin-bottom:0;}
+.daochieu_backup{
+	width: 790px;  height: 590px; 
+	writing-mode: tb-rl;  
+	filter:flipH() flipV(); 
+	overflow-x:scroll;overflow-y:hidden; 
+	padding-top:10; padding-bottom:10;	
+	margin-left:0; margin-right:0; margin-top:0; margin-bottom:0;	
+}
+

@@ -1,0 +1,26 @@
+﻿body, th, td, p, li, ul {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 10px; 
+	color: #765639; 
+	}
+
+.block_green1 {
+	background-color: #fdfffa;
+	background-image: url(../images/topbg_green1.gif);
+	background-repeat: repeat-x;
+	border: 1px solid #b9d1ab;
+}
+.block_blue1 {
+	background-color: #f9ffff;
+	background-image: url(../images/topbg_blue1.gif);
+	background-repeat: repeat-x;
+	border: 1px solid #78afd0;
+}
+.redtitle {
+	font-weight: bold;
+	color: #a34a08;
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+}

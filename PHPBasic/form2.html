@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+#form1 table {
+	border: 5px groove #CC3333;
+	background-color: #FFFF99;
+	color: #003399;
+}
+#form1 table td {
+	border: 1px solid #CCCCCC;
+}
+#form1 caption {
+	background-color: #0744AD;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 5px;
+	background-image: url(hinhnen/bg1.gif);
+	background-repeat: repeat-x;
+	border-top-width: 3px;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-left-width: 3px;
+	border-top-style: dashed;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	scrollbar-arrow-color: #FF3333;
+	scrollbar-base-color: #FF6666;
+}
+.dangky {
+	color: #993300;
+	background-color: #FF9966;
+	width: 300px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+}
+-->
+</style>
+</head>
+
+<body>
+<form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <table width="500" border="1" align="center" cellpadding="4" cellspacing="0">
+  <caption>
+      ĐĂNG KÝ THÀNH VIÊN CLB YÊU NHẠC
+    </caption>
+    <tr>
+      <td>Họ tên</td>
+      <td><input name="hoten" type="text" class="dangky" id="hoten" /></td>
+    </tr>
+    <tr>
+      <td>Tên đăng nhập</td>
+      <td><input name="username" type="text" class="dangky" id="username" /></td>
+    </tr>
+    <tr>
+      <td>Mật khẩu</td>
+      <td><input name="pass" type="password" class="dangky" id="pass" /></td>
+    </tr>
+    <tr>
+      <td>Gõ lại mật khẩu</td>
+      <td><input name="repass" type="password" class="dangky" id="repass" /></td>
+    </tr>
+    <tr>
+      <td height="29">Phái</td>
+      <td><p>
+        <label>
+          <input name="phai" type="radio" id="phai_0" value="0" checked="checked" />
+          Nam</label>
+        <label>
+          <input type="radio" name="phai" value="1" id="phai_1" />
+          Nữ</label>
+        <br />
+      </p></td>
+    </tr>
+    <tr>
+      <td>Ngày sinh</td>
+      <td><input name="ngaysinh" type="text" class="dangky" id="ngaysinh" />
+        <label for="chonngay"></label>
+      <input type="submit" name="chonngay" id="chonngay" value="Chọn" />
+      
+
+      </td>
+    </tr>
+    <tr>
+      <td>Ngoại ngữ</td>
+      <td><input type="checkbox" name="anh" id="anh" />
+Anh
+  <input type="checkbox" name="phap" id="phap" />
+Pháp
+<input type="checkbox" name="hoa" id="hoa" />
+Hoa</td>
+    </tr>
+    <tr>
+      <td>Nghề nghiệp</td>
+      <td><select name="nghenghiep" class="dangky" id="nghenghiep">
+        <option value="0">Bạn làm nghề gì..</option>
+        <option value="1">Học sinh - Sinh Viên</option>
+        <option value="2">Giáo viên</option>
+        <option value="3">Nhân viên</option>
+      </select>      </td>
+    </tr>
+    <tr>
+      <td>Hình</td>
+      <td><input name="hinhanh" type="file" class="dangky" id="hinhanh" /></td>
+    </tr>
+    <tr>
+      <td valign="top">Sở thích</td>
+      <td><textarea name="sothich" cols="45" rows="5" class="dangky" id="sothich"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"><input type="submit" name="dangky" id="dangky" value="Đăng ký" />
+      <input type="reset" name="xoa" id="xoa" value="Làm lại" />
+      <input name="ngaydangky" type="hidden" id="ngaydangky" value="30/4/2009" /></td>
+    </tr>
+  </table>
+  <div align="center"></div>
+</form>
+</body>
+</html>

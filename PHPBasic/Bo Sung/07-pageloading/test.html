@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #CCCC33;
+	border: 5px double #660000;
+	margin-top: 30px;
+	margin-right: 50px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+}
+#loading {
+	font-size: 16px;
+	font-weight: bold;
+	color: #FF0000;
+}
+-->
+</style>
+</head>
+
+<body onLoad="init()">
+
+<div id="loading" style="position:absolute; width:100%; text-align:center; top:250px;">
+Đang nạp trang. Vui lòng đợi giây lát!<br />
+<img src="loading.gif" border=0></div> 
+<script>
+var ld=(document.all);
+var ns4=document.layers;
+var ns6=document.getElementById&&!document.all;
+var ie4=document.all;
+if (ns4)
+ld=document.loading;
+else if (ns6)
+ld=document.getElementById("loading").style;
+else if (ie4)
+ld=document.all.loading.style;
+function init()
+{
+if(ns4){ld.visibility="hidden";}
+else if (ns6||ie4) ld.display="none";
+}
+</script>
+<center>
+<p>Test</p>
+<p><img src="shell.jpg" width="600" height="400" /> </p>
+<p><img src="tibet1.jpg" width="600" height="400" /></p>
+<p><img src="tibet2.jpg" width="600" height="400" /></p>
+<p><img src="tibet3.jpg" width="600" height="400" /></p>
+<p><img src="tibet4.jpg" width="600" height="400" /></p>
+</center>
+</body>
+</html>

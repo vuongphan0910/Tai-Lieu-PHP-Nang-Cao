@@ -1,0 +1,12 @@
+#tintrongloai #path {
+	background-color:#036;color:#FFF; height:30px; line-height:30px;
+	text-transform:uppercase; font-size:16px;}
+#tintrongloai .row_tin {
+	border-bottom: solid 1px #003366; padding-right:5px; min-height:120px;}
+#tintrongloai .row_tin img{ margin-right:5px; width:80px; height:80px}
+#tintrongloai .xemtiep {text-align: right;}
+#tintrongloai .xemtiep a {color: #990033;text-decoration: none;}
+#tintrongloai .xemtiep a:hover {color: #006699;text-decoration: underline;}
+#tintrongloai .tieude{ font-weight:bold; margin-top:5px; margin-bottom:5px;}
+#tintrongloai .tomtat { text-align:justify; margin-top:5px; margin-bottom:5px;}
+#tintrongloai .ngay{ margin-top:5px; margin-bottom:5px; color:#003333; font-style:italic}

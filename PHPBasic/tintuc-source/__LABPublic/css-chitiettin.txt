@@ -1,0 +1,13 @@
+#util {  padding-top:15px; padding-bottom:15px; background-color:#993300;
+		color:#99FF00; text-align:center}
+#util  a{ color:#99FF00; font-weight:bold; text-decoration:none}
+#util  a:hover{ color:#003366}
+
+#tinmoihon, #tincuhon{ margin-top:10px}
+#tinmoihon .caption, #tincuhon .caption {  
+	color:#66FFFF; font-weight:bold; padding-left:10px; 
+text-transform:uppercase; display:block; background-color:#CC9900;
+	padding-bottom:5px; padding-top:5px; border-bottom:solid 1px #99FF00;}
+#tinmoihon a, #tincuhon a{ 
+	color:#990033; text-decoration:none; margin-left:10px; display:block; 
+	padding-top:5px; padding-bottom:5px; border-bottom:dotted 1px #990066; }
