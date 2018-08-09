@@ -1,0 +1,10 @@
+cách phân trang theo k?t qu? l?c
+giu nguyen kq tim kiem
+bao loi khong nhap noi dung tin
+dua thong bao loi vao table
+layloaitin trong the loai va giu nguyen khi submit
+-home,giu nguyen vi tri div top 3
+
+
+
+Lam lai:dang ky thanh vien,gui mail,tao form dang nhap tren trang chu

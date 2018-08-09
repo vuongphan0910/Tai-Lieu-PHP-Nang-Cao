@@ -1,0 +1,527 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<base href="http://localhost:81/tintuc/"  />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+	
+			function chuyenngonngu(lang){
+		$.cookie("lang",lang, {exprire:7,path:'/tintuc/'}) ;
+		document.location='/tintuc/';
+	   //window.location.reload();
+}
+	$(document).ready(function(e) {
+				$.ajax({
+			url:'userinfo.php', cache:false,
+			success:function(d){ $("#userinfo").html(d); }
+		})
+				
+
+    });
+
+  
+
+</script>
+<script type="text/javascript" src="js/jquery.cookie.js">
+	
+</script>	
+<title>Sạt lở kinh hoàng, 15 căn nhà sập, chìm dưới sông</title>
+
+<style>
+body {
+		
+		background:url(css/images/pattern.gif) ;
+	
+		
+	}
+	#container
+	{
+		width:990px;	
+		margin:auto;	
+	}
+	#header
+	{
+		
+		height:180px;
+		background-color:#0CF;
+		
+	}
+	#menu
+	{height:37px;
+	background-color:#990;
+
+	margin-top:3px;
+	
+	}
+	#content1{
+		
+		height:340px;
+		width:485px;
+		background-color:#FFF;
+		float:left;
+		margin-top:3px;
+		margin-right:3px;
+		border:solid 1px #CCCCCC;
+		
+		
+		
+		}	
+		#content2
+		{
+			width:300px;
+			height:310px;		
+			float:left;
+			background-color:#0C6;
+			margin-top:3px;
+			
+		}
+		#content3
+		{
+			width:197px;
+			min-height:800px;
+			float:right;
+			background-color:#60F;
+			margin-top:3px;
+			margin-left:3px;
+		}
+		#info
+		{
+			height:30px;
+			background-color:#F00;
+			width:500px;
+			float:left;
+			margin-top:3px;
+			
+		}
+		#quangcao
+		{
+			width:790px;
+			height:87px;
+			float:left;
+			background-color:#F00;
+			margin-top:3px;
+		}
+		#content4
+		{
+			width:790px;
+			min-height:397px;
+			background-color:#FFF;
+			float:left;
+			margin-top:3px;
+			margin-bottom:3px;
+			
+		}
+		#footer
+		{height:150px;
+		background-color:#000;
+		clear:both;
+		
+		
+		
+	}
+
+	#info_1{
+		
+			width:300px;
+			height:30px;
+			line-height:30px;
+			background-color:#FFF;
+			float:left;	
+			text-align:center;
+		
+		}
+		#info_2{
+			width:80px;
+			height:30px;
+			float:left;
+			text-align:center;
+			background-color:#3F0;
+		
+		}
+		#info_2 img{margin-top:5px;}
+		#info_3{
+			height:30px;
+			background-color:#0CF;
+			text-align:center;
+		
+		}
+		#info_3 img{
+			margin-top:5px;
+		}
+	.pagination_news {
+					width:100%;
+					clear:both;
+					padding:10px 0 10px 0;
+					margin:0px;
+					text-align:right;
+					float:left;
+					clear:both;
+					font-size:11px;
+					
+					}
+					
+					.pagination_news a {
+					padding: 5px 10px 5px 10px;
+					margin:5px;
+					border: 1px solid #52bfea;
+					text-decoration: none; 
+					color: #000;
+					box-shadow:3px 3px 3px #000;
+					}
+					.pagination_news span
+					{
+						padding: 5px 10px 5px 10px;
+					background-color:#CCC;
+						color:#000;
+						border-radius:3px;
+						box-shadow:3px 3px 3px #000;
+						
+						margin:0 5px 0 5px;
+						text-decoration:none;
+						border:solid 1px  #52bfea;}
+					.pagination_news a:hover, .pagination_news a:active {
+					border:1px solid #52bfea;
+					color: #fff;
+					background-color: #52bfea;
+					}
+					.pagination_news span.current {
+					padding: 2px 5px 2px 5px;
+					margin-right: 2px;
+					border: 1px solid #52bfea;
+					font-weight: bold;
+					background-color: #52bfea;
+					color: #FFF;
+					}
+					.pagination_news span.disabled {
+					padding: 2px 5px 2px 5px;
+					margin-right: 2px;
+					border: 1px solid #f3f3f3;
+					color: #ccc;
+					}
+
+</style>
+</head>
+
+<body>
+<div id="container">
+	<div id="header"><img src="hinh/banner2.jpg" width="990" height="180" /></div>
+    <div id="menu"><script type="text/javascript" src="apycom.com-8-deep-sky-blue/menu.js"></script>
+<link rel="stylesheet" type="text/css" href="apycom.com-8-deep-sky-blue/menu.css"/>
+
+<div id="menu">
+    <ul class="menu">
+    <li><a href="/tintuc/" ><span>Trang chủ</span></a></li>
+              <li><a href="#" class="parent"><span>Tin xã hội</span></a>
+               <div>               		<ul>                  <li><a href="cat/The-Thao.html" class="parent"><span>Thể thao</span></a>
+                                      <li><a href="cat/tham-hiem.html" class="parent"><span>Thám Hiểm</span></a>
+                                      <li><a href="cat/Xa-Hoi.html" class="parent"><span>Xã hội</span></a>
+                                      <li><a href="cat/Khoa-Hoc.html" class="parent"><span>Khoa học</span></a>
+                                      <li><a href="cat/Van-Hoa.html" class="parent"><span>Văn hoá</span></a>
+                                      <li><a href="cat/Giao-Duc.html" class="parent"><span>Giáo dục</span></a>
+                                      <li><a href="cat/Phap-Luat.html" class="parent"><span>Pháp luật</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thế giới web</span></a>
+               <div>               		<ul>                  <li><a href="cat/Tin-Tuc-Web.html" class="parent"><span>Tin tức web</span></a>
+                                      <li><a href="cat/Tools.html" class="parent"><span>Tools</span></a>
+                                      <li><a href="cat/Website-Huu-Ich.html" class="parent"><span>Website hữu ích</span></a>
+                                      <li><a href="cat/Scripts-Huu-Dung.html" class="parent"><span>Scripts hữu dụng</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Nghệ thuật sống</span></a>
+               <div>               		<ul>                  <li><a href="cat/.html" class="parent"><span>Chia sẻ</span></a>
+                                      <li><a href="cat/Song-Dep.html" class="parent"><span>Sống đẹp</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Công nghệ</span></a>
+               <div>               		<ul>                  <li><a href="cat/San-Pham-Moi.html" class="parent"><span>Sản phẩm mới</span></a>
+                                      <li><a href="cat/.html" class="parent"><span>Vi tính</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Việc làm</span></a>
+               <div>               		<ul> 
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thư giãn</span></a>
+               <div>               		<ul>                  <li><a href="cat/Tho-Hay.html" class="parent"><span>Thơ hay</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thường thức </span></a>
+               <div>               		<ul>                  <li><a href="cat/Meo-Vat.html" class="parent"><span>Mẹo vặt</span></a>
+                                      <li><a href="cat/Suc-Khoe.html" class="parent"><span>Sức khỏe</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thiên nhiên</span></a>
+               <div>               		<ul>                  <li><a href="cat/phong-canh.html" class="parent"><span>Phong cảnh</span></a>
+                                      <li><a href="cat/Dong-Vat.html" class="parent"><span>Động vật</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+               </ul>
+   </div>
+	    </div>
+    	    <div id ="content3"><script>
+	$(document).ready(function(e) {
+        $("#btnbinhchon").click(function(){		
+		var idBC=$("#idBC").val();
+		var idPA=-1; 
+		$("[name='idPA']").each(function(){if (this.checked==true)idPA=this.value });//duyet tung phan tu ten la'idPA' neu checked thi lay gia tri cua phan tu do vao idPA 
+		if (idPA==-1) { alert("Bạn chưa chọn phương án nào"); return}
+		var data = "idBC=" + idBC + "&idPA=" + idPA; //alert(data);
+		$("#divbinhchon").load("ketqubinhchon.tco",data).hide().slideDown();//lay du lieu tu kqbc nap vao div binhchon
+});
+
+    });
+</script>
+<div id="divbinhchon">
+	<p class="capption">BÌNH CHỌN</p>
+    <p>Bạn thấy website này thế nào</p>
+    		<p><input type="radio" name="idPA" value="4"/>Rất đẹp</p>
+        
+			<p><input type="radio" name="idPA" value="5"/>Đẹp</p>
+        
+	<input type="hidden" name="idBC" id="idBC" value="2" />
+<p align="center"> <input type="button" value="Bình chọn" id="btnbinhchon"> </p>
+
+
+</div>
+
+    	<div id="userinfo"><br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: include(fuserinfo.php): failed to open stream: No such file or directory in C:\wamp\www\tintuc\home.php on line <i>242</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.2030</td><td bgcolor='#eeeeec' align='right'>152872</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.7160</td><td bgcolor='#eeeeec' align='right'>182808</td><td bgcolor='#eeeeec'>include( <font color='#00bb00'>'C:\wamp\www\tintuc\home.php'</font> )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>10</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: include(): Failed opening 'fuserinfo.php' for inclusion (include_path='.;C:\php\pear') in C:\wamp\www\tintuc\home.php on line <i>242</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.2030</td><td bgcolor='#eeeeec' align='right'>152872</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.7160</td><td bgcolor='#eeeeec' align='right'>182808</td><td bgcolor='#eeeeec'>include( <font color='#00bb00'>'C:\wamp\www\tintuc\home.php'</font> )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>10</td></tr>
+</table></font>
+</div>
+    </div>
+        <div id="content4">
+     
+<style>
+	#path{ background-color:#999900; color:#003366; font-weight:bold;
+	    padding-top:5px; padding-bottom:5px; }
+#chitiettin_left{ float:left; width:535px;; background-color:#FFF;padding-right:3px;}
+#chitiettin_right{ float:left; width:250px; background-color:#FFF; border:solid 1px #000; }
+#chitiettin #tin_tieude{ font-weight:bold; color:#003366; }
+#chitiettin #tin_tomtat{ 
+color:#000; text-align:justify; border-bottom:#CC3300 1px solid; 
+padding-bottom:12px; padding-right:5px; font-size:16px}
+#chitiettin #tin_noidung{ text-align:justify; background-color:#FFF;}
+#chitiettin .ngay{ color:#036;  font-style:italic; text-align:right}
+/*#util{
+		
+	}
+#tinmoihon{
+			text-align:center;	
+	}
+#tincuhon{}
+.caption{
+		
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 2px 0 #fcfafa;
+    height: auto;
+    margin-bottom: 0;
+    padding: 8px 10px 0;	
+	display:inline-table;
+	}
+	#tincuhon {
+			text-align:center;	
+			color:#000;
+			
+	}
+	#tincuhon p{border-top:solid 1px #000000;padding-top:5px;}
+	#tincuhon a{text-decoration:none; color:#000;}*/
+	#util {  padding-top:15px; padding-bottom:15px; background-color:#993300;
+		color:#99FF00; text-align:center}
+#util  a{ color:#99FF00; font-weight:bold; text-decoration:none}
+#util  a:hover{ color:#003366}
+
+#tinmoihon, #tincuhon{ margin-top:10px}
+#tinmoihon .caption, #tincuhon .caption {  
+	color:#66FFFF; font-weight:bold; padding-left:10px; 
+text-transform:uppercase; display:block; background-color:#CC9900;
+	padding-bottom:5px; padding-top:5px; border-bottom:solid 1px #99FF00;}
+#tinmoihon a, #tincuhon a{ 
+	color:#990033; text-decoration:none; margin-left:10px; display:block; 
+	padding-top:5px; padding-bottom:5px; border-bottom:dotted 1px #990066; }
+</style>
+<script>
+	$(document).ready(function(e) {
+       $("#banin").click(function(){
+    $("#header").hide();      $("#menu").hide();
+    $("#content1").hide();    $("#content2").hide();
+    $("#info").hide();        $("#content3").hide();
+    $("#footer").hide();      $("#util").hide();
+    $("#chitiettin_right").hide();
+    $("#chitiettin").css("width","990px");
+    $("#chitiettin_left").css("width","990px");
+    $("#path").css("width","990px");
+	/*window.print() ;*/
+    return false; });
+	
+		
+    });
+</script>
+
+
+<div id=path>Trang chủ/Tin xã hội/Xã hội</div>
+<div id="chitiettin">
+    <div id="chitiettin_left">
+       <p id="tin_tieude"> Sạt lở kinh hoàng, 15 căn nhà sập, chìm dưới sông </p>
+       <p id="tin_tomtat">
+       <img src="/tintuc/dataupload/images/2011-07-02 18-32-06--hientruong1_dd02c.JPG.jpg" width=70 height=70 align=left>
+       (Dân trí) - Sau tiếng động mạnh, 51 người cư ngụ trong 15 căn nhà ven sông hốt hoảng tháo chạy ra ngoài. Chỉ trong vài phút, 7 căn nhà nằm liền kề nhau bị kéo sập xuống sông, 8 căn khác bị kéo nứt toác. >> Hỗ trợ khẩn cấp các hộ dân bị sông “nuốt” nhà       </p>
+       <div id="tin_noidung"> <p class="MsoNormal">
+	&nbsp;</p>
+<p class="MsoNormal">
+	&nbsp;</p>
+<div align="center">
+	<img _fl="" align="middle" src="http://dantri4.vcmedia.vn/OlRTd1upOguwZHvZpzsc/Image/2011/06/hientruong1_dd02c.JPG" style="MARGIN: 5px" width="448" /></div>
+<div align="center">
+	<span style="FONT-FAMILY: Tahoma; FONT-SIZE: 10pt">Hiện trường vụ sạt lở</span></div>
+<p>
+	&nbsp;</p>
+<p class="MsoNormal">
+	Khoảng 22h15 ng&agrave;y 1/7, c&aacute;c hộ d&acirc;n sống tại ven s&ocirc;ng X&oacute;m Củi đoạn chạy ngang khu vực ấp 4 x&atilde; B&igrave;nh Hưng, huyện B&igrave;nh Ch&aacute;nh hoảng hốt ph&aacute;t hiện những tiếng động mạnh, tiếng t&ocirc;n bị x&eacute; toạc. 15 căn nh&agrave; liền kề nhau bắt đầu c&oacute; dấu hiệu bị k&eacute;o nghi&ecirc;ng.</p>
+<p class="MsoNormal">
+	&nbsp;</p>
+<div align="center">
+	<img _fl="" align="middle" src="http://dantri4.vcmedia.vn/OlRTd1upOguwZHvZpzsc/Image/2011/06/hientruong3_387ff.JPG" style="MARGIN: 5px" width="448" /></div>
+<div align="center">
+	<span style="FONT-FAMILY: Tahoma; FONT-SIZE: 10pt">Những căn nh&agrave; bị k&eacute;o ch&igrave;m xuống s&ocirc;ng</span></div>
+<p>
+	&nbsp;</p>
+<p class="MsoNormal">
+	Thời điểm n&agrave;y, một số hộ d&acirc;n đ&atilde; kh&oacute;a cửa đi ngủ. Do căn nh&agrave; bị k&eacute;o nghi&ecirc;ng tạo n&ecirc;n lực giằng khiến nhiều gia đ&igrave;nh kh&ocirc;ng thể mở cửa. Một khung cảnh hỗn loạn xảy ra, những người tho&aacute;t được ra ngo&agrave;i nh&aacute;o nh&agrave;o t&igrave;m c&aacute;ch đập cửa để cứu những người đang bị mắc kẹt b&ecirc;n trong.</p>
+<p class="MsoNormal">
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p class="MsoNormal">
+	&Ocirc;ng B&ugrave;i Văn B&eacute; (56 tuổi, chủ một căn nh&agrave; bị sạt lở xuống s&ocirc;ng) cho biết, khi &ocirc;ng đang thu dọn của h&agrave;ng tạp h&oacute;a th&igrave; thấy tiếng động mạnh, nh&agrave; nghi&ecirc;ng, nh&igrave;n ra ph&iacute;a trước thấy khoảng s&acirc;n bị nứt rộng. Vừa mang được chiếc tủ lạnh ra ngo&agrave;i th&igrave; 2/3 căn nh&agrave; của &ocirc;ng ch&igrave;m xuống s&ocirc;ng.</p>
+<p class="MsoNormal">
+	Ngay sau sự cố, lực lượng d&acirc;n phố được huy động c&ugrave;ng c&aacute;c thanh ni&ecirc;n trong x&oacute;m hỗ trợ đưa những người trong khu vực s&aacute;t lở đến nơi an to&agrave;n.</p>
+<p class="MsoNormal">
+	&nbsp;</p>
+<div align="center">
+	<img _fl="" align="middle" src="http://dantri4.vcmedia.vn/OlRTd1upOguwZHvZpzsc/Image/2011/06/dondo_2d435.JPG" style="MARGIN: 5px" width="448" /></div>
+<div align="center">
+	<span style="FONT-FAMILY: Tahoma; FONT-SIZE: 10pt">Người d&acirc;n khu vực n&agrave;y di chuyển đồ đạc ra b&ecirc;n ngo&agrave;i</span></div>
+<p>
+	&nbsp;</p>
+<p class="MsoNormal">
+	Thống k&ecirc; ban đầu của ch&iacute;nh quyền địa phương cho thấy, 7 căn nh&agrave; bị sạt lở ho&agrave;n to&agrave;n xuống s&ocirc;ng, 8 căn kh&aacute;c bị x&eacute; toạc c&oacute; nguy cơ sạt lở xuống s&ocirc;ng bất cứ l&uacute;c n&agrave;o. Tổng cộng c&oacute; tất cả 51 nh&acirc;n khẩu bị ảnh hưởng.</p>
+<p class="MsoNormal">
+	&nbsp;</p>
+<div align="center">
+	<img _fl="" align="middle" src="http://dantri4.vcmedia.vn/OlRTd1upOguwZHvZpzsc/Image/2011/06/rannut_d6b80.JPG" style="MARGIN: 5px" width="448" /></div>
+<div align="center">
+	<span style="FONT-FAMILY: Tahoma; FONT-SIZE: 10pt">Một căn nh&agrave; bị k&eacute;o rạn nứt v&agrave; c&oacute; nguy cơ ch&igrave;m xuống s&ocirc;ng bất cứ l&uacute;c n&agrave;o</span></div>
+<p>
+	&nbsp;</p>
+<p class="MsoNormal">
+	Điều đ&aacute;ng n&oacute;i, sau vụ sạt lở xảy ra c&oacute; một số người ở nơi kh&aacute;c đ&atilde; bơi v&agrave;o hiện trường để &ldquo;h&ocirc;i&rdquo; t&agrave;i sản của những nh&agrave; bị nạn.</p>
+<p class="MsoNormal">
+	Đến 10h s&aacute;ng 2/7, nhiều người vẫn đang lặn m&ograve; trong căn nh&agrave; để vớt lại những vật dụng b&ecirc;n trong.</p>
+<p class="MsoNormal">
+	&ldquo;Ch&aacute;y nh&agrave; th&igrave; c&ograve;n c&aacute;i nền để x&acirc;y nh&agrave; mới, c&ograve;n bị sạt lở coi như mất hết. To&agrave;n bộ t&agrave;i sản nằm hết ở đ&oacute;. Kh&ocirc;ng biết sau n&agrave;y ch&uacute;ng t&ocirc;i sống thế n&agrave;o nữa&rdquo;&nbsp;- &ocirc;ng B&eacute; đau x&oacute;t.</p>
+<p class="MsoNormal">
+	Theo nhiều người d&acirc;n đại phương, nhiều khả năng nguy&ecirc;n nh&acirc;n dẫn đến vụ sạt lở l&agrave; c&aacute;c x&agrave; lan chở c&aacute;t lưu th&ocirc;ng qua khu vực n&agrave;y. Thời gian gần đ&acirc;y, mỗi ng&agrave;y c&oacute; khoảng 15 chuyến x&agrave; lan lưu th&ocirc;ng qua tạo th&agrave;nh c&aacute;c c&aacute;c đợt s&oacute;ng cộng với việc số hộ d&acirc;n n&agrave;y nằm ngay kh&uacute;c cua của s&ocirc;ng X&oacute;m Củi n&ecirc;n tạo th&agrave;nh c&aacute;c v&ograve;ng xo&aacute;y ăn v&agrave;o bờ tạo n&ecirc;n sạt lở nền.</p>
+<p class="MsoNormal">
+	&nbsp;</p>
+<div align="center">
+	<img _fl="" align="middle" src="http://dantri4.vcmedia.vn/OlRTd1upOguwZHvZpzsc/Image/2011/06/matsau_89aa8.JPG" style="MARGIN: 5px" width="448" /></div>
+<div align="center">
+	<span style="FONT-FAMILY: Tahoma; FONT-SIZE: 10pt">Khu vực người c&aacute;c hộ d&acirc;n bị sạt lở nằm ngay kh&uacute;c cua s&ocirc;ng X&oacute;m củi</span></div>
+<p>
+	&nbsp;</p>
+<p class="MsoNormal">
+	Theo &ocirc;ng Đo&agrave;n Văn Được&nbsp;- Ph&oacute; ban d&acirc;n phố ấp 4, x&atilde; B&igrave;nh Hưng, vụ sạt lở&nbsp;c&ograve;n c&oacute; thể l&agrave; do mực nước s&ocirc;ng xuống thấp l&agrave;m ch&igrave;a m&oacute;ng của c&aacute;c căn nh&agrave; tr&ecirc;n, gặp cơn mưa lớn v&agrave;o chiều 1/7 n&ecirc;n phần đất l&agrave;m ch&acirc;n đứng cho m&oacute;ng nh&agrave; bị s&oacute;i m&ograve;n dẫn đến sạt lở.</p>
+<p class="MsoNormal">
+	Hiện c&aacute;c cấp ch&iacute;nh quyền đang họp b&agrave;n để t&igrave;m phương &aacute;n hỗ trợ c&aacute;c gia đ&igrave;nh bị sập nh&agrave; hoặc ảnh hưởng.</p>
+<p align="right" class="MsoNormal">
+	<span style="FONT-WEIGHT: bold">Trung Ki&ecirc;n</span></p>
+<p>
+	<input id="hidNextUsing" type="hidden" value="/c20s20/xa-hoi/trang-1.htm" /></p>
+ </div> 
+     </div>
+     <div id="chitiettin_right"> 
+     		<div id="util">
+    <a href="#" id="banin"> Bản in </a> &nbsp; 
+     Xem:  26. 
+     Đăng:  01/01/1970              
+				</div>
+								
+                <div id="tinmoihon">
+                    <span class="caption">Tin mới hơn</span>
+                    
+                                          <p> <img src="/tintuc/upload/images/Desert.jpg"  width="140" height="110" align="center"/></p>
+                       <p> <a href="news/con-gai-thieu-ta-huan-luyen-du-hy-sinh-sao-bo-van-chua-ve.html"> Con gái Thiếu tá huấn luyện dù hy sinh: 'Sao bố vẫn chưa về?' </a></p>
+                                  </div>
+                                 				 
+                <div id="tincuhon">         
+                    <span class="caption">Tin cũ hơn</span>
+                   
+                                            <p> <img src="/tintuc/dataupload/images/2011-07-02 18-27-21--kilo.jpg"  width="140" height="110" align="center"/></p>
+                        <a href="news/Nga-Giao-Tau-Ngam-Cho-Viet-Nam-Vao-Nam-2014.html"> 
+						Nga giao tàu ngầm cho Việt Nam vào...</a>
+                                            <p> <img src="/tintuc/dataupload/images/2011-07-02 09-17-37--hoangjpg-104729.jpg"  width="140" height="110" align="center"/></p>
+                        <a href="news/Thanh-Pho-Hoang-Phe.html"> 
+						
+                        Thành phố h...</a>
+                                            <p> <img src="/tintuc/dataupload/images/2011-06-29 19-10-04--bom.jpg"  width="140" height="110" align="center"/></p>
+                        <a href="news/Nhat...-Bom:-Chuyen-Gia-Chan-Dat.html"> 
+						Nhặt... bom: Chuyên gia chân đất...</a>
+                                            <p> <img src="/tintuc/dataupload/images/2011-06-29 18-56-05--QD11795x1181jpg-084546.jpg"  width="140" height="110" align="center"/></p>
+                        <a href="news/Vinh-Biet-Giong-Ca-Vang-Quy-Duong.html"> 
+						
+                        Vĩnh biệt g...</a>
+                                            <p> <img src="/tintuc/dataupload/images/2011-06-27 07-50-02--a4jpg-034736.jpg"  width="140" height="110" align="center"/></p>
+                        <a href="news/Ban-Hang-Dom-Qua-Truyen-Hinh:-Nha-Dai-Van-Vo-Tu.html"> 
+						
+                        Bán hàng d�...</a>
+                    			</div>
+			      </div>     
+</div>
+
+      
+    </div>
+    <div id="footer">footer</div>
+
+
+</div>
+
+</body>
+</html>

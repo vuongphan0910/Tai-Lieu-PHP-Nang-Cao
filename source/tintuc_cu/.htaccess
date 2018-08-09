@@ -1,0 +1,28 @@
+RewriteEngine on
+RewriteRule ^news/(.*)\.html$ trangchu.php?view=news&TieuDe_KhongDau=$1
+RewriteRule ^(.*)\.tco$ $1.php
+DirectoryIndex trangchu.php
+AddDefaultCharset UTF-8
+Options -Indexes 
+RewriteRule ^cat/(.*)/(.*)/$  trangchu.php?view=cat&Ten_KhongDau=$1&pageNum=$2 [L]
+RewriteRule ^cat/(.*)\.html$  trangchu.php?view=cat&Ten_KhongDau=$1&pageNum=1  [L]
+
+
+RewriteRule ^search/(.*)/(.*)/$  trangchu.php?view=search&tukhoa=$1&pageNum=$2 [L]
+RewriteRule ^search/(.*)\.html$  trangchu.php?view=search&tukhoa=$1&pageNum=1  [L]
+
+<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf)$">
+Header set Cache-Control "max-age=2592000"
+</FilesMatch>
+
+<FilesMatch ".(js|css|pdf|txt)$">
+Header set Cache-Control "max-age=604800"
+</FilesMatch>
+
+<FilesMatch ".(html|htm)$">
+Header set Cache-Control "max-age=43200"
+</FilesMatch>
+
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+Header unset Cache-Control
+</FilesMatch>

@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<base href="http://localhost:81/tintuc/"  />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+	
+			function chuyenngonngu(lang){
+		$.cookie("lang",lang, {exprire:7,path:'/tintuc/'}) ;
+		document.location='/tintuc/';
+	   //window.location.reload();
+}
+	$(document).ready(function(e) {
+				$.ajax({
+			url:'userinfo.php', cache:false,
+			success:function(d){ $("#userinfo").html(d); }
+		})
+				
+
+    });
+
+  
+
+</script>
+<script type="text/javascript" src="js/jquery.cookie.js">
+	
+</script>	
+<title>Argentina gây thất vọng trong trận ra quân Copa America</title>
+
+<style>
+body {
+		
+		background:url(css/images/pattern.gif) ;
+	
+		
+	}
+	#container
+	{
+		width:990px;	
+		margin:auto;	
+	}
+	#header
+	{
+		
+		height:180px;
+		background-color:#0CF;
+		
+	}
+	#menu
+	{height:37px;
+	background-color:#990;
+
+	margin-top:3px;
+	
+	}
+	#content1{
+		
+		height:340px;
+		width:485px;
+		background-color:#FFF;
+		float:left;
+		margin-top:3px;
+		margin-right:3px;
+		border:solid 1px #CCCCCC;
+		
+		
+		
+		}	
+		#content2
+		{
+			width:300px;
+			height:310px;		
+			float:left;
+			background-color:#0C6;
+			margin-top:3px;
+			
+		}
+		#content3
+		{
+			width:197px;
+			min-height:800px;
+			float:right;
+			background-color:#60F;
+			margin-top:3px;
+			margin-left:3px;
+		}
+		#info
+		{
+			height:30px;
+			background-color:#F00;
+			width:500px;
+			float:left;
+			margin-top:3px;
+			
+		}
+		#quangcao
+		{
+			width:790px;
+			height:87px;
+			float:left;
+			background-color:#F00;
+			margin-top:3px;
+		}
+		#content4
+		{
+			width:790px;
+			min-height:397px;
+			background-color:#FFF;
+			float:left;
+			margin-top:3px;
+			margin-bottom:3px;
+			
+		}
+		#footer
+		{height:150px;
+		background-color:#000;
+		clear:both;
+		
+		
+		
+	}
+
+	#info_1{
+		
+			width:300px;
+			height:30px;
+			line-height:30px;
+			background-color:#FFF;
+			float:left;	
+			text-align:center;
+		
+		}
+		#info_2{
+			width:80px;
+			height:30px;
+			float:left;
+			text-align:center;
+			background-color:#3F0;
+		
+		}
+		#info_2 img{margin-top:5px;}
+		#info_3{
+			height:30px;
+			background-color:#0CF;
+			text-align:center;
+		
+		}
+		#info_3 img{
+			margin-top:5px;
+		}
+	.pagination_news {
+					width:100%;
+					clear:both;
+					padding:10px 0 10px 0;
+					margin:0px;
+					text-align:right;
+					float:left;
+					clear:both;
+					font-size:11px;
+					
+					}
+					
+					.pagination_news a {
+					padding: 5px 10px 5px 10px;
+					margin:5px;
+					border: 1px solid #52bfea;
+					text-decoration: none; 
+					color: #000;
+					box-shadow:3px 3px 3px #000;
+					}
+					.pagination_news span
+					{
+						padding: 5px 10px 5px 10px;
+					background-color:#CCC;
+						color:#000;
+						border-radius:3px;
+						box-shadow:3px 3px 3px #000;
+						
+						margin:0 5px 0 5px;
+						text-decoration:none;
+						border:solid 1px  #52bfea;}
+					.pagination_news a:hover, .pagination_news a:active {
+					border:1px solid #52bfea;
+					color: #fff;
+					background-color: #52bfea;
+					}
+					.pagination_news span.current {
+					padding: 2px 5px 2px 5px;
+					margin-right: 2px;
+					border: 1px solid #52bfea;
+					font-weight: bold;
+					background-color: #52bfea;
+					color: #FFF;
+					}
+					.pagination_news span.disabled {
+					padding: 2px 5px 2px 5px;
+					margin-right: 2px;
+					border: 1px solid #f3f3f3;
+					color: #ccc;
+					}
+
+</style>
+</head>
+
+<body>
+<div id="container">
+	<div id="header"><img src="hinh/banner2.jpg" width="990" height="180" /></div>
+    <div id="menu"><script type="text/javascript" src="apycom.com-8-deep-sky-blue/menu.js"></script>
+<link rel="stylesheet" type="text/css" href="apycom.com-8-deep-sky-blue/menu.css"/>
+
+<div id="menu">
+    <ul class="menu">
+    <li><a href="/tintuc/" ><span>Trang chủ</span></a></li>
+              <li><a href="#" class="parent"><span>Tin xã hội</span></a>
+               <div>               		<ul>                  <li><a href="cat/The-Thao.html" class="parent"><span>Thể thao</span></a>
+                                      <li><a href="cat/tham-hiem.html" class="parent"><span>Thám Hiểm</span></a>
+                                      <li><a href="cat/Xa-Hoi.html" class="parent"><span>Xã hội</span></a>
+                                      <li><a href="cat/Khoa-Hoc.html" class="parent"><span>Khoa học</span></a>
+                                      <li><a href="cat/Van-Hoa.html" class="parent"><span>Văn hoá</span></a>
+                                      <li><a href="cat/Giao-Duc.html" class="parent"><span>Giáo dục</span></a>
+                                      <li><a href="cat/Phap-Luat.html" class="parent"><span>Pháp luật</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thế giới web</span></a>
+               <div>               		<ul>                  <li><a href="cat/Tin-Tuc-Web.html" class="parent"><span>Tin tức web</span></a>
+                                      <li><a href="cat/Tools.html" class="parent"><span>Tools</span></a>
+                                      <li><a href="cat/Website-Huu-Ich.html" class="parent"><span>Website hữu ích</span></a>
+                                      <li><a href="cat/Scripts-Huu-Dung.html" class="parent"><span>Scripts hữu dụng</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Nghệ thuật sống</span></a>
+               <div>               		<ul>                  <li><a href="cat/.html" class="parent"><span>Chia sẻ</span></a>
+                                      <li><a href="cat/Song-Dep.html" class="parent"><span>Sống đẹp</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Công nghệ</span></a>
+               <div>               		<ul>                  <li><a href="cat/San-Pham-Moi.html" class="parent"><span>Sản phẩm mới</span></a>
+                                      <li><a href="cat/.html" class="parent"><span>Vi tính</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Việc làm</span></a>
+               <div>               		<ul> 
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thư giãn</span></a>
+               <div>               		<ul>                  <li><a href="cat/Tho-Hay.html" class="parent"><span>Thơ hay</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thường thức </span></a>
+               <div>               		<ul>                  <li><a href="cat/Meo-Vat.html" class="parent"><span>Mẹo vặt</span></a>
+                                      <li><a href="cat/Suc-Khoe.html" class="parent"><span>Sức khỏe</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thiên nhiên</span></a>
+               <div>               		<ul>                  <li><a href="cat/phong-canh.html" class="parent"><span>Phong cảnh</span></a>
+                                      <li><a href="cat/Dong-Vat.html" class="parent"><span>Động vật</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+               </ul>
+   </div>
+	    </div>
+    	    <div id ="content3"><script>
+	$(document).ready(function(e) {
+        $("#btnbinhchon").click(function(){		
+		var idBC=$("#idBC").val();
+		var idPA=-1; 
+		$("[name='idPA']").each(function(){if (this.checked==true)idPA=this.value });//duyet tung phan tu ten la'idPA' neu checked thi lay gia tri cua phan tu do vao idPA 
+		if (idPA==-1) { alert("Bạn chưa chọn phương án nào"); return}
+		var data = "idBC=" + idBC + "&idPA=" + idPA; //alert(data);
+		$("#divbinhchon").load("ketqubinhchon.tco",data).hide().slideDown();//lay du lieu tu kqbc nap vao div binhchon
+});
+
+    });
+</script>
+<div id="divbinhchon">
+	<p class="capption">BÌNH CHỌN</p>
+    <p>Sở thích của bạn là gì</p>
+    		<p><input type="radio" name="idPA" value="1"/>Nhìn mưa rơi</p>
+        
+			<p><input type="radio" name="idPA" value="2"/>Nghe chim hót</p>
+        
+			<p><input type="radio" name="idPA" value="3"/>Ngắm mây bay</p>
+        
+	<input type="hidden" name="idBC" id="idBC" value="1" />
+<p align="center"> <input type="button" value="Bình chọn" id="btnbinhchon"> </p>
+
+
+</div>
+
+    	<div id="userinfo"><br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: include(fuserinfo.php): failed to open stream: No such file or directory in C:\wamp\www\tintuc\home.php on line <i>242</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>153576</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0010</td><td bgcolor='#eeeeec' align='right'>183520</td><td bgcolor='#eeeeec'>include( <font color='#00bb00'>'C:\wamp\www\tintuc\home.php'</font> )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>10</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: include(): Failed opening 'fuserinfo.php' for inclusion (include_path='.;C:\php\pear') in C:\wamp\www\tintuc\home.php on line <i>242</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>153576</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0010</td><td bgcolor='#eeeeec' align='right'>183520</td><td bgcolor='#eeeeec'>include( <font color='#00bb00'>'C:\wamp\www\tintuc\home.php'</font> )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>10</td></tr>
+</table></font>
+</div>
+    </div>
+        <div id="content4">
+     
+<style>
+	#path{ background-color:#999900; color:#003366; font-weight:bold;
+	    padding-top:5px; padding-bottom:5px; }
+#chitiettin_left{ float:left; width:535px;; background-color:#FFF;padding-right:3px;}
+#chitiettin_right{ float:left; width:250px; background-color:#FFF; border:solid 1px #000; }
+#chitiettin #tin_tieude{ font-weight:bold; color:#003366; }
+#chitiettin #tin_tomtat{ 
+color:#000; text-align:justify; border-bottom:#CC3300 1px solid; 
+padding-bottom:12px; padding-right:5px; font-size:16px}
+#chitiettin #tin_noidung{ text-align:justify; background-color:#FFF;}
+#chitiettin .ngay{ color:#036;  font-style:italic; text-align:right}
+/*#util{
+		
+	}
+#tinmoihon{
+			text-align:center;	
+	}
+#tincuhon{}
+.caption{
+		
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 2px 0 #fcfafa;
+    height: auto;
+    margin-bottom: 0;
+    padding: 8px 10px 0;	
+	display:inline-table;
+	}
+	#tincuhon {
+			text-align:center;	
+			color:#000;
+			
+	}
+	#tincuhon p{border-top:solid 1px #000000;padding-top:5px;}
+	#tincuhon a{text-decoration:none; color:#000;}*/
+	#util {  padding-top:15px; padding-bottom:15px; background-color:#993300;
+		color:#99FF00; text-align:center}
+#util  a{ color:#99FF00; font-weight:bold; text-decoration:none}
+#util  a:hover{ color:#003366}
+
+#tinmoihon, #tincuhon{ margin-top:10px}
+#tinmoihon .caption, #tincuhon .caption {  
+	color:#66FFFF; font-weight:bold; padding-left:10px; 
+text-transform:uppercase; display:block; background-color:#CC9900;
+	padding-bottom:5px; padding-top:5px; border-bottom:solid 1px #99FF00;}
+#tinmoihon a, #tincuhon a{ 
+	color:#990033; text-decoration:none; margin-left:10px; display:block; 
+	padding-top:5px; padding-bottom:5px; border-bottom:dotted 1px #990066; }
+</style>
+<script>
+	$(document).ready(function(e) {
+       $("#banin").click(function(){
+    $("#header").hide();      $("#menu").hide();
+    $("#content1").hide();    $("#content2").hide();
+    $("#info").hide();        $("#content3").hide();
+    $("#footer").hide();      $("#util").hide();
+    $("#chitiettin_right").hide();
+    $("#chitiettin").css("width","990px");
+    $("#chitiettin_left").css("width","990px");
+    $("#path").css("width","990px");
+	/*window.print() ;*/
+    return false; });
+	
+		
+    });
+</script>
+
+
+<div id=path>Trang chủ/Tin xã hội/Thể thao</div>
+<div id="chitiettin">
+    <div id="chitiettin_left">
+       <p id="tin_tieude"> Argentina gây thất vọng trong trận ra quân Copa America </p>
+       <p id="tin_tomtat">
+       <img src="/tintuc/dataupload/images/2011-07-02 18-28-24--messi.jpg" width=70 height=70 align=left>
+       Dàn sao đẳng cấp thế giới của đội tuyển chủ nhà Argentina đã có màn trình diễn thiếu thuyết phục và bị Bolivia cầm chân 1-1 trong trận khai mạc sáng thứ bảy, theo giờ Việt Nam.       </p>
+       <div id="tin_noidung"> 
+				
+
+<table cellspacing=0 cellpadding=3 width="100%" border=0>
+<tr>
+<td><img src="http://vnexpress.net/Files/Subject/3b/a2/bb/de/messi.jpg" width=490 height=359 border=1 /></td></tr>
+<tr>
+<td class="Image" align="left">Người hâm mộ chưa thấy bóng dáng nhà vô địch ở Argentina. </td></tr></table>
+<p class=Normal>Bằng lối đá hợp lý, Bolivia - đội tuyển thường cạnh tranh với Venezuela để tránh vị trí cuối bảng tại vòng loại World Cup - đã gây rất nhiều bất ngờ cho đội chủ nhà. Các cầu thủ Bolivia thi đấu lăn xả, không ngại va chạm. Kết quả là họ thường giành chiến thắng trong các pha tranh bóng ở giữa sân và vượt lên dẫn trước một cách xứng đáng nhờ pha lập công của Edivaldo ở phút 48.</p>
+<p class=Normal>Trong thế trận cân bằng, Argentina may mắn tìm được bàn gỡ ở phút 76 nhờ cú vô lê của Sergio Aguero. Dàn sao đẳng cấp của đội chủ nhà lấy lại nhịp độ quen thuộc trong 10 phút cuối nhưng lối chơi thiếu gắn kết đã không đem lại hiệu quả trước hàng thủ bướng bỉnh của Bolivia. Lionel Messi và Carlos Tevez đều nổi bật với các nỗ lực cá nhân nhưng đội khách đứng vững đến những giây cuối và giành được 1 điểm.</p>
+<p class=Normal>Kết quả hòa trong trận khai mạc đã đánh dấu màn khởi đầu nhạt nhòa cho HLV Sergio Batista và các học trò. Tại Copa America, Argentina có nhiều yếu tố thuận lợi như sân nhà, lực lượng cầu thủ trưởng thành và đang có phong độ tốt. Do đó trận hòa Bolivia là một đòn giáng vào tham vọng vô địch của họ.</p>
+<p class=Normal><strong><a href="http://vnexpress.net/gl/the-thao/2011/07/argentina-gay-that-vong-trong-tran-ra-quan-copa-america/Page_2.asp" class="">Xem clip bàn mở tỷ số của Edivaldo</a></strong>.</p>
+<p class=Normal><strong><a href="http://vnexpress.net/gl/the-thao/2011/07/argentina-gay-that-vong-trong-tran-ra-quan-copa-america/Page_3.asp" class="">Aguero gỡ hòa cho Argentina</a></strong>.</p>
+<p class=Normal><strong><a href="http://vnexpress.net/gl/the-thao/2011/07/argentina-gay-that-vong-trong-tran-ra-quan-copa-america/Page_4.asp" class="">Pha cứu thua xuất sắc cho Argentina của thủ môn Romero</a></strong>.</p>
+<p class=Normal>Để kiếm 3 điểm trong trận ra quân, HLV Batista chủ trương lối chơi tấn công, sử dụng sơ đồ chiến thuật 4-3-3. Ở tuyến trên, Messi đá cặp với Tevez và Ezequiel Lavezzi, ngôi sao vừa giúp Napoli đoạt vé dự Champions League. Ở tuyến giữa, Javier Mascherano trở lại vị trí tiền vệ phòng ngự sở trường thay vì vai trò trung vệ tại CLB Barcelona. Chơi cặp với Mascherano là Banega và Cambiassso, hai cầu thủ cũng có xu hướng phòng ngự. Ở tuyến dưới, Gabi Milito - trung vệ dự bị tại Barcelona, giành được suất đá chính bên cạnh Burdisso. Hai cầu thủ chơi hậu vệ cánh là lão tướng Javier Zanetti và Rojo.</p>
+<p class=Normal>Với nhiều cầu thủ đẳng cấp thế giới, giành chiến thắng trong trận khai mạc thiết tưởng là nhiệm vụ không quá khó khăn dành cho thày trò HLV Batista. Tuy nhiên, Bolivia đã sử dụng lối chơi hợp lý và kiếm được 1 điểm xứng đáng.</p>
+<p class=Normal>Trong khoảng 10 phút đầu, Argentina chơi rất tự tin, hoàn toàn lấn lướt Bolivia. Thế nhưng ngay sau đó đội khách gây sức ép lớn ở trung tuyến và kiểm soát bóng nhiều hơn.</p>
+<p class=Normal>Messi, cầu thủ hay nhất thế giới hai năm qua, một lần nữa thất bại trong việc chuyển hóa phong độ cao từ CLB Barcelona lên đẳng cấp quốc tế. Trong suốt trận Messi có rất ít cơ hội gây sóng gió về phía khung thành Bolivia. Một tiền đạo hàng đầu khác của Argentina, Tevez, cũng chơi nhạt nhòa trước hàng thủ không ngại va chạm của đội khách.</p>
+<p class=Normal>Trong suốt trận đấu, Argentina trông giống như 11 cá nhân chơi bóng chứ không phải một tập thể gắn kết thực sự. Họ chỉ tạo được một chút sóng gió đáng kể khi hiệp một sắp kết thúc. Phút 31, Messi lấy được bóng từ hàng tiền vệ, chuyền dọn cỗ lên trên, thế nhưng Tevez dứt điểm thiếu nhạy cảm khiến bóng đi chệch cột. Khoảng 2 phút sau, tiền vệ Esteban Cambiasso cũng lấy được bóng từ khu trung tuyến và suýt lập công bằng một pha lốp bóng kỹ thuật.</p>
+<p class=Normal>Tung vào sân nhiều ngôi sao mà chơi không hiệu quả, Argentina đã phải trả giá ở phút 48. Bolivia vượt lên một cách bất ngờ bằng cú đánh gót của Edivaldo. Tiền vệ Ever Banega đứng ngay sát cột dọc nhưng để bóng lọt qua hai chân và vượt qua vạch vôi. Trọng tài đã đúng khi công nhận bàn mở tỷ số cho đội khách bất chấp sự phản đối của các cầu thủ và khán giả chủ nhà.</p>
+<p class=Normal>Tấn công mờ nhạt trong hiệp hai, Argentina phải đợi tới phút 76 mới có bàn gỡ hòa 1-1. Sáu phút sau khi vào sân thay Lavezzi, Aguero cứu đội chủ nhà bằng cú vô lê một chạm đẹp mắt ngay trong vòng cấm. Hai hậu vệ Bolivia đứng ngay cạnh Aguero nhưng không kịp ngăn tiền đạo CLB Atletico Madrid.</p>
+<p class=Normal>Trong loạt trận thứ hai ở bảng A, Argentina cần thắng Colombia nếu muốn tự quyết định số phận. Đội còn lại ở bảng này là khách mời Costa Rica.</p>
+<p class=Normal>Brazil, đương kim vô địch và là đội đã giành 4 chức vô địch trong năm giải gần đây, sẽ khởi đầu với Venezuela trong trận mở màn bảng B ngày chủ nhật.</p>
+<p class=Normal><strong>Đội hình thi đấu:</strong></p>
+<p class=Normal><strong>Argentina</strong>: Romero, Zanetti, Burdisso, Milito, Rojo; Banega, Mascherano, Cambiasso (Di María 46'), Lavezzi (Agüero 70'), Messi, Tévez.</p>
+<p class=Normal><strong>Bolivia</strong>: Arias; Alvarez, Raldes, Rivero, Gutiérrez; Vaca (Chávez 63'), Robles, Flores, Campos, Rojas (Cardozo 88'), Martins.</p>
+<p class=Normal>Kết quả: Argentina 1-1 Bolivia</p>
+<p class=Normal>Bàn thắng: Sergio Aguero 76' - Edivaldo 48'</p>
+<p class=Normal align=right><strong>Thúy An</strong></p>
+ </div> 
+     </div>
+     <div id="chitiettin_right"> 
+     		<div id="util">
+    <a href="#" id="banin"> Bản in </a> &nbsp; 
+     Xem:  45. 
+     Đăng:  02/07/2011              
+				</div>
+								
+                <div id="tinmoihon">
+                    <span class="caption">Tin mới hơn</span>
+                    
+                                          <p> <img src="/tintuc/upload/images/Hydrangeas.jpg"  width="140" height="110" align="center"/></p>
+                       <p> <a href="news/brazil-duc-99-selecao-thua-tran.html"> Brazil - Đức: 99% Selecao thua trận </a></p>
+                                  </div>
+                                 				 
+                <div id="tincuhon">         
+                    <span class="caption">Tin cũ hơn</span>
+                   
+                                            <p> <img src="/tintuc/dataupload/images/2011-07-02 09-24-42--KY THU LE QUANG LIEM.jpg"  width="140" height="110" align="center"/></p>
+                        <a href="news/Ky-Thu-L#234;-Quang-Li#234;M-L#234;N-Top-30-The-Gioi.html"> 
+						Kỳ thủ L&#234; Quang Li&#234;m l&#23...</a>
+                                            <p> <img src="/tintuc/dataupload/images/2011-06-28 18-47-45--6jpg-123013.jpg"  width="140" height="110" align="center"/></p>
+                        <a href="news/De-Gea-Hoan-Thanh-Cuoc-Kiem-Tra-Y-Te-Tai-M.U.html"> 
+						
+                        De Gea hoàn t...</a>
+                                            <p> <img src="/tintuc/dataupload/images/2011-06-27 09-41-12--barrerajpg-123735.jpg"  width="140" height="110" align="center"/></p>
+                        <a href="news/Loi-Nguoc-Dong-Than-Ky,-Mexico-Vo-Dich-Gold-Cup-2011.html"> 
+						
+                        Lội ngược...</a>
+                                            <p> <img src="/tintuc/dataupload/images/2011-06-25 18-46-16--sanchez_337f9.jpg"  width="140" height="110" align="center"/></p>
+                        <a href="news/“Real-Se-Het-Cua-Vo-Dich-Neu-Barca-Co-Alexis-Sanchez”.html"> 
+						“Real sẽ hết cửa vô địch n�...</a>
+                                            <p> <img src="/tintuc/dataupload/images/2011-06-25 18-46-09--nani2_6d507.jpg"  width="140" height="110" align="center"/></p>
+                        <a href="news/Co-Ashley-Young,-Mu-Van-Muon-Giu-Lai-Nani.html"> 
+						Có Ashley Young, MU vẫn muốn giữ ...</a>
+                    			</div>
+			      </div>     
+</div>
+
+      
+    </div>
+    <div id="footer">footer</div>
+
+
+</div>
+
+</body>
+</html>

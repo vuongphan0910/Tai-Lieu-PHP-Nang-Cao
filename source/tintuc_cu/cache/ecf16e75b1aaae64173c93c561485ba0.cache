@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<base href="http://localhost:81/tintuc/"  />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+	
+			function chuyenngonngu(lang){
+		$.cookie("lang",lang, {exprire:7,path:'/tintuc/'}) ;
+		document.location='/tintuc/';
+	   //window.location.reload();
+}
+	$(document).ready(function(e) {
+				$.ajax({
+			url:'userinfo.php', cache:false,
+			success:function(d){ $("#userinfo").html(d); }
+		})
+				
+
+    });
+
+  
+
+</script>
+<script type="text/javascript" src="js/jquery.cookie.js">
+	
+</script>	
+<title>Thể thao</title>
+
+<style>
+body {
+		
+		background:url(css/images/pattern.gif) ;
+	
+		
+	}
+	#container
+	{
+		width:990px;	
+		margin:auto;	
+	}
+	#header
+	{
+		
+		height:180px;
+		background-color:#0CF;
+		
+	}
+	#menu
+	{height:37px;
+	background-color:#990;
+
+	margin-top:3px;
+	
+	}
+	#content1{
+		
+		height:340px;
+		width:485px;
+		background-color:#FFF;
+		float:left;
+		margin-top:3px;
+		margin-right:3px;
+		border:solid 1px #CCCCCC;
+		
+		
+		
+		}	
+		#content2
+		{
+			width:300px;
+			height:310px;		
+			float:left;
+			background-color:#0C6;
+			margin-top:3px;
+			
+		}
+		#content3
+		{
+			width:197px;
+			min-height:800px;
+			float:right;
+			background-color:#60F;
+			margin-top:3px;
+			margin-left:3px;
+		}
+		#info
+		{
+			height:30px;
+			background-color:#F00;
+			width:500px;
+			float:left;
+			margin-top:3px;
+			
+		}
+		#quangcao
+		{
+			width:790px;
+			height:87px;
+			float:left;
+			background-color:#F00;
+			margin-top:3px;
+		}
+		#content4
+		{
+			width:790px;
+			min-height:397px;
+			background-color:#FFF;
+			float:left;
+			margin-top:3px;
+			margin-bottom:3px;
+			
+		}
+		#footer
+		{height:150px;
+		background-color:#000;
+		clear:both;
+		
+		
+		
+	}
+
+	#info_1{
+		
+			width:300px;
+			height:30px;
+			line-height:30px;
+			background-color:#FFF;
+			float:left;	
+			text-align:center;
+		
+		}
+		#info_2{
+			width:80px;
+			height:30px;
+			float:left;
+			text-align:center;
+			background-color:#3F0;
+		
+		}
+		#info_2 img{margin-top:5px;}
+		#info_3{
+			height:30px;
+			background-color:#0CF;
+			text-align:center;
+		
+		}
+		#info_3 img{
+			margin-top:5px;
+		}
+	.pagination_news {
+					width:100%;
+					clear:both;
+					padding:10px 0 10px 0;
+					margin:0px;
+					text-align:right;
+					float:left;
+					clear:both;
+					font-size:11px;
+					
+					}
+					
+					.pagination_news a {
+					padding: 5px 10px 5px 10px;
+					margin:5px;
+					border: 1px solid #52bfea;
+					text-decoration: none; 
+					color: #000;
+					box-shadow:3px 3px 3px #000;
+					}
+					.pagination_news span
+					{
+						padding: 5px 10px 5px 10px;
+					background-color:#CCC;
+						color:#000;
+						border-radius:3px;
+						box-shadow:3px 3px 3px #000;
+						
+						margin:0 5px 0 5px;
+						text-decoration:none;
+						border:solid 1px  #52bfea;}
+					.pagination_news a:hover, .pagination_news a:active {
+					border:1px solid #52bfea;
+					color: #fff;
+					background-color: #52bfea;
+					}
+					.pagination_news span.current {
+					padding: 2px 5px 2px 5px;
+					margin-right: 2px;
+					border: 1px solid #52bfea;
+					font-weight: bold;
+					background-color: #52bfea;
+					color: #FFF;
+					}
+					.pagination_news span.disabled {
+					padding: 2px 5px 2px 5px;
+					margin-right: 2px;
+					border: 1px solid #f3f3f3;
+					color: #ccc;
+					}
+
+</style>
+</head>
+
+<body>
+<div id="container">
+	<div id="header"><img src="hinh/banner2.jpg" width="990" height="180" /></div>
+    <div id="menu"><script type="text/javascript" src="apycom.com-8-deep-sky-blue/menu.js"></script>
+<link rel="stylesheet" type="text/css" href="apycom.com-8-deep-sky-blue/menu.css"/>
+
+<div id="menu">
+    <ul class="menu">
+    <li><a href="/tintuc/" ><span>Trang chủ</span></a></li>
+              <li><a href="#" class="parent"><span>Tin xã hội</span></a>
+               <div>               		<ul>                  <li><a href="cat/The-Thao.html" class="parent"><span>Thể thao</span></a>
+                                      <li><a href="cat/tham-hiem.html" class="parent"><span>Thám Hiểm</span></a>
+                                      <li><a href="cat/Xa-Hoi.html" class="parent"><span>Xã hội</span></a>
+                                      <li><a href="cat/Khoa-Hoc.html" class="parent"><span>Khoa học</span></a>
+                                      <li><a href="cat/Van-Hoa.html" class="parent"><span>Văn hoá</span></a>
+                                      <li><a href="cat/Giao-Duc.html" class="parent"><span>Giáo dục</span></a>
+                                      <li><a href="cat/Phap-Luat.html" class="parent"><span>Pháp luật</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thế giới web</span></a>
+               <div>               		<ul>                  <li><a href="cat/Tin-Tuc-Web.html" class="parent"><span>Tin tức web</span></a>
+                                      <li><a href="cat/Tools.html" class="parent"><span>Tools</span></a>
+                                      <li><a href="cat/Website-Huu-Ich.html" class="parent"><span>Website hữu ích</span></a>
+                                      <li><a href="cat/Scripts-Huu-Dung.html" class="parent"><span>Scripts hữu dụng</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Nghệ thuật sống</span></a>
+               <div>               		<ul>                  <li><a href="cat/.html" class="parent"><span>Chia sẻ</span></a>
+                                      <li><a href="cat/Song-Dep.html" class="parent"><span>Sống đẹp</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Công nghệ</span></a>
+               <div>               		<ul>                  <li><a href="cat/San-Pham-Moi.html" class="parent"><span>Sản phẩm mới</span></a>
+                                      <li><a href="cat/.html" class="parent"><span>Vi tính</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Việc làm</span></a>
+               <div>               		<ul> 
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thư giãn</span></a>
+               <div>               		<ul>                  <li><a href="cat/Tho-Hay.html" class="parent"><span>Thơ hay</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thường thức </span></a>
+               <div>               		<ul>                  <li><a href="cat/Meo-Vat.html" class="parent"><span>Mẹo vặt</span></a>
+                                      <li><a href="cat/Suc-Khoe.html" class="parent"><span>Sức khỏe</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thiên nhiên</span></a>
+               <div>               		<ul>                  <li><a href="cat/phong-canh.html" class="parent"><span>Phong cảnh</span></a>
+                                      <li><a href="cat/Dong-Vat.html" class="parent"><span>Động vật</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+               </ul>
+   </div>
+	    </div>
+    	    <div id ="content3"><script>
+	$(document).ready(function(e) {
+        $("#btnbinhchon").click(function(){		
+		var idBC=$("#idBC").val();
+		var idPA=-1; 
+		$("[name='idPA']").each(function(){if (this.checked==true)idPA=this.value });//duyet tung phan tu ten la'idPA' neu checked thi lay gia tri cua phan tu do vao idPA 
+		if (idPA==-1) { alert("Bạn chưa chọn phương án nào"); return}
+		var data = "idBC=" + idBC + "&idPA=" + idPA; //alert(data);
+		$("#divbinhchon").load("ketqubinhchon.tco",data).hide().slideDown();//lay du lieu tu kqbc nap vao div binhchon
+});
+
+    });
+</script>
+<div id="divbinhchon">
+	<p class="capption">BÌNH CHỌN</p>
+    <p>Sở thích của bạn là gì</p>
+    		<p><input type="radio" name="idPA" value="1"/>Nhìn mưa rơi</p>
+        
+			<p><input type="radio" name="idPA" value="2"/>Nghe chim hót</p>
+        
+			<p><input type="radio" name="idPA" value="3"/>Ngắm mây bay</p>
+        
+	<input type="hidden" name="idBC" id="idBC" value="1" />
+<p align="center"> <input type="button" value="Bình chọn" id="btnbinhchon"> </p>
+
+
+</div>
+
+    	<div id="userinfo"><br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: include(fuserinfo.php): failed to open stream: No such file or directory in C:\wamp\www\tintuc\home.php on line <i>242</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0010</td><td bgcolor='#eeeeec' align='right'>152784</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0020</td><td bgcolor='#eeeeec' align='right'>182672</td><td bgcolor='#eeeeec'>include( <font color='#00bb00'>'C:\wamp\www\tintuc\home.php'</font> )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>10</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: include(): Failed opening 'fuserinfo.php' for inclusion (include_path='.;C:\php\pear') in C:\wamp\www\tintuc\home.php on line <i>242</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0010</td><td bgcolor='#eeeeec' align='right'>152784</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0020</td><td bgcolor='#eeeeec' align='right'>182672</td><td bgcolor='#eeeeec'>include( <font color='#00bb00'>'C:\wamp\www\tintuc\home.php'</font> )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>10</td></tr>
+</table></font>
+</div>
+    </div>
+        <div id="content4">
+     <style >
+	#tintrongloai #path {
+	background-color:#036;color:#FFF; height:30px; line-height:30px;
+	text-transform:uppercase; font-size:16px;}
+	#tintrongloai .row_tin {
+		border-bottom: solid 1px #000; padding-right:5px; min-height:160px;margin:5px;}
+	#tintrongloai .row_tin img{ margin-right:5px; width:180px; height:100px}
+	#tintrongloai .xemtiep {text-align: right;}
+	#tintrongloai .xemtiep a {color: #990033;text-decoration: none;}
+	#tintrongloai .xemtiep a:hover {color: #006699;text-decoration: underline;}
+	#tintrongloai .tieude{ font-weight:bold; margin-top:5px; margin-bottom:5px;}
+	#tintrongloai .tomtat { text-align:justify; margin-top:5px; margin-bottom:5px;}
+	#tintrongloai .ngay{ margin-top:5px; margin-bottom:5px; color:#003333; font-style:italic}
+	#catenews_left{
+			width:500px;
+			min-height:350px;
+			float:left;
+			display:block;
+			background-color:#06F;
+		
+		}
+		#catenews_left a{display:block;}
+		#catenews_right{ width:287px;float:right;background-color:#0CF;margin-left:3px;text-align:center; 
+			}
+			#catenews_right a {display:block;}
+		/*	#catenews_right img{al}*/
+		
+	
+
+</style>
+
+<div id="tintrongloai">
+	
+	<div id="path">Trang chủ/Tin xã hội>Thể thao</div>
+								                   <div class="row_tin">
+                  <a href="news/Villas-Boas-Tro-Thanh-Tan-Huan-Luyen-Vien-Chelsea.html"> <p class="tieude">Villas-Boas trở thành tân huấn luyện viên Chelsea </p></a>
+                   <p class="ngay">
+                   <img src="/tintuc/dataupload/images/2011-06-23 09-23-40--chelsea.jpg" width="150" height="100" align="left">
+                   Ngày đăng: 23/06/2011. 
+                   Số lần xem: 0 </p>
+                   <p class="tomtat"> Chiến lược gia được ví như "Jose Mourinho đệ nhị" đã chính thức được chỉ định vào chiếc ghế nóng ở sân Stamford Bridge. </p>
+                   <div class="xemtiep"> <a href="news/Villas-Boas-Tro-Thanh-Tan-Huan-Luyen-Vien-Chelsea.html">Xem chi tiết</a> </div>
+                </div>
+                                   <div class="row_tin">
+                  <a href="news/Hlv-Anbrar:-Olympic-Vn-Khien-Chung-Toi-Ngac-Nhien.html"> <p class="tieude">
+                        HLV Anbrar: Olympic VN khiến chúng tôi ngạc nhiên
+ </p></a>
+                   <p class="ngay">
+                   <img src="/tintuc/dataupload/images/2011-06-23 08-59-14--P6220087JPG-083534.jpg" width="150" height="100" align="left">
+                   Ngày đăng: 23/06/2011. 
+                   Số lần xem: 1 </p>
+                   <p class="tomtat"> 
+                                     D&ugrave; thất bại 0-2 tại lượt đi tr&ecirc;n đất Saudi Arabia nhưng Olympic VN đ&atilde; đặt mục ti&ecirc;u l&agrave; lội d&ograve;ng nước ngược th&agrave;nh c&ocirc;ng ở lượt về. Trong khi đ&oacute;, trong buổi họp b&aacute;o, HLV Yousef Anbar cho biết: &quot;Olympic VN đ&atilde; khiến ch&uacute;ng t&ocirc;i thực sự cảm thấy ngạc nhi&ecirc;n...&quot;
+ </p>
+                   <div class="xemtiep"> <a href="news/Hlv-Anbrar:-Olympic-Vn-Khien-Chung-Toi-Ngac-Nhien.html">Xem chi tiết</a> </div>
+                </div>
+                                   <div class="row_tin">
+                  <a href="news/Inter-Chinh-Thuc-Chia-Tay-Voi-“Cong-Than”-Materazzi.html"> <p class="tieude">Inter chính thức chia tay với “công thần” Materazzi </p></a>
+                   <p class="ngay">
+                   <img src="/tintuc/dataupload/images/2011-06-22 09-31-51--Anh_56bd2.jpg" width="150" height="100" align="left">
+                   Ngày đăng: 22/06/2011. 
+                   Số lần xem: 1 </p>
+                   <p class="tomtat"> (Dân trí) - Sau 10 năm gắn bó cùng sắc xanh - đen với không ít vinh quang và kỉ niệm, cuối cùng “lão tướng” Marco Materazzi cũng đã chính thức nói lời chia tay với sân Meazza. Matrix đã đồng ý chấm dứt hợp đồng trước thời hạn và chuẩn bị tìm kiếm một bến đỗ mới. </p>
+                   <div class="xemtiep"> <a href="news/Inter-Chinh-Thuc-Chia-Tay-Voi-“Cong-Than”-Materazzi.html">Xem chi tiết</a> </div>
+                </div>
+                                   <div class="row_tin">
+                  <a href="news/Man-City,-Chelsea-Quyet-Chien-Vi-David-Villa.html"> <p class="tieude">Man City, Chelsea quyết chiến vì David Villa </p></a>
+                   <p class="ngay">
+                   <img src="/tintuc/dataupload/images/2011-06-20 10-40-15--davidvilla_2e1d8.jpg" width="150" height="100" align="left">
+                   Ngày đăng: 20/06/2011. 
+                   Số lần xem: 0 </p>
+                   <p class="tomtat"> (Dân trí) - Tin tức từ xứ sở sương mù cho hay, hai “đại gia” Man City và Chelsea đang cạnh tranh khốc liệt trong cuộc đua giành chữ ký của tiền đạo D.Villa từ Barcelona. </p>
+                   <div class="xemtiep"> <a href="news/Man-City,-Chelsea-Quyet-Chien-Vi-David-Villa.html">Xem chi tiết</a> </div>
+                </div>
+                                   <div class="row_tin">
+                  <a href="news/San-Wembley-To-Chuc-Chung-Ket-Champions-League-Mua-Giai-Toi.html"> <p class="tieude">
+                        Sân Wembley tổ chức chung kết Champions League mùa giải tới
+ </p></a>
+                   <p class="ngay">
+                   <img src="/tintuc/dataupload/images/2011-06-18 10-48-19--wembleyjpg-044956.jpg" width="150" height="100" align="left">
+                   Ngày đăng: 18/06/2011. 
+                   Số lần xem: 0 </p>
+                   <p class="tomtat"> 
+                                     Tại m&ugrave;a giải 2012/2013, UEFA đ&atilde; quyết địch chọn SVĐ Wembley (Anh) l&agrave; nơi tổ chức trận chung kết Champions League. SVĐ Amsterdam ArenA l&agrave; nơi tổ chức trận chung kết UEFA Europa League v&agrave; trận si&ecirc;u c&uacute;p sẽ đực tổ chức tại SVĐ Eden ở Prague &ndash; CH S&eacute;c.
+ </p>
+                   <div class="xemtiep"> <a href="news/San-Wembley-To-Chuc-Chung-Ket-Champions-League-Mua-Giai-Toi.html">Xem chi tiết</a> </div>
+                </div>
+                                
+                
+                
+                <p class="pagination_news">
+        <a href='cat/The-Thao.html'>Trang đầu</a><a href='cat/The-Thao/2/'>Trang Trước</a><a href = 'cat/The-Thao/1/'>1</a><a href = 'cat/The-Thao/2/'>2</a><span>3</span><a href = 'cat/The-Thao/4/'>4</a><a href = 'cat/The-Thao/5/'>5</a><a href = 'cat/The-Thao/6/'>6</a><a href='cat/The-Thao/4/'>Trang Kế</a><a href='cat/The-Thao/10/'>Trang Cuối</a>        </p>
+
+			
+</div>
+
+
+      
+    </div>
+    <div id="footer">footer</div>
+
+
+</div>
+
+</body>
+</html>

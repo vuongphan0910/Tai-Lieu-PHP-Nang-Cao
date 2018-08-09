@@ -1,0 +1,834 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<base href="http://localhost:81/tintuc/"  />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+	
+			function chuyenngonngu(lang){
+		$.cookie("lang",lang, {exprire:7,path:'/tintuc/'}) ;
+		document.location='/tintuc/';
+	   //window.location.reload();
+}
+	$(document).ready(function(e) {
+				$.ajax({
+			url:'userinfo.php', cache:false,
+			success:function(d){ $("#userinfo").html(d); }
+		})
+				
+
+    });
+
+  
+
+</script>
+<script type="text/javascript" src="js/jquery.cookie.js">
+	
+</script>	
+<title>TIN TỨC ONLINE</title>
+
+<style>
+body {
+		
+		background:url(css/images/pattern.gif) ;
+	
+		
+	}
+	#container
+	{
+		width:990px;	
+		margin:auto;	
+	}
+	#header
+	{
+		
+		height:180px;
+		background-color:#0CF;
+		
+	}
+	#menu
+	{height:37px;
+	background-color:#990;
+
+	margin-top:3px;
+	
+	}
+	#content1{
+		
+		height:340px;
+		width:485px;
+		background-color:#FFF;
+		float:left;
+		margin-top:3px;
+		margin-right:3px;
+		border:solid 1px #CCCCCC;
+		
+		
+		
+		}	
+		#content2
+		{
+			width:300px;
+			height:310px;		
+			float:left;
+			background-color:#0C6;
+			margin-top:3px;
+			
+		}
+		#content3
+		{
+			width:197px;
+			min-height:800px;
+			float:right;
+			background-color:#60F;
+			margin-top:3px;
+			margin-left:3px;
+		}
+		#info
+		{
+			height:30px;
+			background-color:#F00;
+			width:500px;
+			float:left;
+			margin-top:3px;
+			
+		}
+		#quangcao
+		{
+			width:790px;
+			height:87px;
+			float:left;
+			background-color:#F00;
+			margin-top:3px;
+		}
+		#content4
+		{
+			width:790px;
+			min-height:397px;
+			background-color:#FFF;
+			float:left;
+			margin-top:3px;
+			margin-bottom:3px;
+			
+		}
+		#footer
+		{height:150px;
+		background-color:#000;
+		clear:both;
+		
+		
+		
+	}
+
+	#info_1{
+		
+			width:300px;
+			height:30px;
+			line-height:30px;
+			background-color:#FFF;
+			float:left;	
+			text-align:center;
+		
+		}
+		#info_2{
+			width:80px;
+			height:30px;
+			float:left;
+			text-align:center;
+			background-color:#3F0;
+		
+		}
+		#info_2 img{margin-top:5px;}
+		#info_3{
+			height:30px;
+			background-color:#0CF;
+			text-align:center;
+		
+		}
+		#info_3 img{
+			margin-top:5px;
+		}
+	.pagination_news {
+					width:100%;
+					clear:both;
+					padding:10px 0 10px 0;
+					margin:0px;
+					text-align:right;
+					float:left;
+					clear:both;
+					font-size:11px;
+					
+					}
+					
+					.pagination_news a {
+					padding: 5px 10px 5px 10px;
+					margin:5px;
+					border: 1px solid #52bfea;
+					text-decoration: none; 
+					color: #000;
+					box-shadow:3px 3px 3px #000;
+					}
+					.pagination_news span
+					{
+						padding: 5px 10px 5px 10px;
+					background-color:#CCC;
+						color:#000;
+						border-radius:3px;
+						box-shadow:3px 3px 3px #000;
+						
+						margin:0 5px 0 5px;
+						text-decoration:none;
+						border:solid 1px  #52bfea;}
+					.pagination_news a:hover, .pagination_news a:active {
+					border:1px solid #52bfea;
+					color: #fff;
+					background-color: #52bfea;
+					}
+					.pagination_news span.current {
+					padding: 2px 5px 2px 5px;
+					margin-right: 2px;
+					border: 1px solid #52bfea;
+					font-weight: bold;
+					background-color: #52bfea;
+					color: #FFF;
+					}
+					.pagination_news span.disabled {
+					padding: 2px 5px 2px 5px;
+					margin-right: 2px;
+					border: 1px solid #f3f3f3;
+					color: #ccc;
+					}
+
+</style>
+</head>
+
+<body>
+<div id="container">
+	<div id="header"><img src="hinh/banner2.jpg" width="990" height="180" /></div>
+    <div id="menu"><script type="text/javascript" src="apycom.com-8-deep-sky-blue/menu.js"></script>
+<link rel="stylesheet" type="text/css" href="apycom.com-8-deep-sky-blue/menu.css"/>
+
+<div id="menu">
+    <ul class="menu">
+    <li><a href="/tintuc/" ><span>Trang chủ</span></a></li>
+              <li><a href="#" class="parent"><span>Tin xã hội</span></a>
+               <div>               		<ul>                  <li><a href="cat/The-Thao.html" class="parent"><span>Thể thao</span></a>
+                                      <li><a href="cat/tham-hiem.html" class="parent"><span>Thám Hiểm</span></a>
+                                      <li><a href="cat/Xa-Hoi.html" class="parent"><span>Xã hội</span></a>
+                                      <li><a href="cat/Khoa-Hoc.html" class="parent"><span>Khoa học</span></a>
+                                      <li><a href="cat/Van-Hoa.html" class="parent"><span>Văn hoá</span></a>
+                                      <li><a href="cat/Giao-Duc.html" class="parent"><span>Giáo dục</span></a>
+                                      <li><a href="cat/Phap-Luat.html" class="parent"><span>Pháp luật</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thế giới web</span></a>
+               <div>               		<ul>                  <li><a href="cat/Tin-Tuc-Web.html" class="parent"><span>Tin tức web</span></a>
+                                      <li><a href="cat/Tools.html" class="parent"><span>Tools</span></a>
+                                      <li><a href="cat/Website-Huu-Ich.html" class="parent"><span>Website hữu ích</span></a>
+                                      <li><a href="cat/Scripts-Huu-Dung.html" class="parent"><span>Scripts hữu dụng</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Nghệ thuật sống</span></a>
+               <div>               		<ul>                  <li><a href="cat/.html" class="parent"><span>Chia sẻ</span></a>
+                                      <li><a href="cat/Song-Dep.html" class="parent"><span>Sống đẹp</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Công nghệ</span></a>
+               <div>               		<ul>                  <li><a href="cat/San-Pham-Moi.html" class="parent"><span>Sản phẩm mới</span></a>
+                                      <li><a href="cat/.html" class="parent"><span>Vi tính</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Việc làm</span></a>
+               <div>               		<ul> 
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thư giãn</span></a>
+               <div>               		<ul>                  <li><a href="cat/Tho-Hay.html" class="parent"><span>Thơ hay</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thường thức </span></a>
+               <div>               		<ul>                  <li><a href="cat/Meo-Vat.html" class="parent"><span>Mẹo vặt</span></a>
+                                      <li><a href="cat/Suc-Khoe.html" class="parent"><span>Sức khỏe</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thiên nhiên</span></a>
+               <div>               		<ul>                  <li><a href="cat/phong-canh.html" class="parent"><span>Phong cảnh</span></a>
+                                      <li><a href="cat/Dong-Vat.html" class="parent"><span>Động vật</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+               </ul>
+   </div>
+	    </div>
+    	    <div id="content1"><style>
+	#nb_xn #tabs a{ color:#06F; text-decoration:none; float:right;
+	background-color:#CCC; width:100px; display:block; margin-left:2px;
+	padding-top:3px; padding-bottom:3px; text-align:center}
+#nb_xn #tabs a:hover{ color:#003366;}
+
+
+</style>
+<script>
+	$(document).ready(function(e) {
+        $("#txn").click(function(){
+	    $("#contenttab").load("tinxemnhieu.tco"); return false;
+})
+		$("#tnb").click(function(){
+	    $("#contenttab").load("tinnoibat.tco");  return false;
+		})
+
+			
+
+    });
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div id="nb_xn">
+    <div id="tabs">
+    	   <a href="#" id="tnb">Tin nổi bật</a>
+	      <a href="#" id="txn">Tin xem nhiều</a>
+         <div style="clear:both"></div>
+    </div>
+    <div id="contenttab"><style>
+	#tinnoibat { width:485px ;overflow:hidden;}
+	
+	#tinnoibat #top1 p{ margin:auto;}
+	
+	#tinnoibat #top1 a{ color:#006699; font-size:18px; text-decoration:none}
+	#tinnoibat #top1 { text-align:justify; color:#000033;}
+	#tinnoibat #top3 { margin-top:10px;clear:both;} 
+	#tinnoibat #top3 div {  float:left; width:32%; text-align:center; border:dotted 1px #CCFF00; height:150px; overflow:hidden; padding-top:5px; margin-left:3px; background-color:#CCC}
+	#tinnoibat #top3 a{ text-decoration:none; color:#006699;}
+	#tinnoibat img { margin-right:5px; }
+
+</style>
+<div id="tinnoibat">
+ <div id="top1">
+   <img width=150 height=120 align=left src="/tintuc/upload/images/Desert.jpg"/>
+   <p><a href="news/con-gai-thieu-ta-huan-luyen-du-hy-sinh-sao-bo-van-chua-ve.html">Con gái Thiếu tá huấn luyện dù hy sinh: 'Sao bố vẫn chưa về?'</a> </p>
+   <!--<p class="tomtat">--><span>Bất ngờ, tiếc thương nhưng cũng đầy tự hào là cảm xúc của người thân, đồng đội Thiếu tá Đặng Thành Chung (huấn luyện viên dù 48 tuổi) và các chiến sĩ gặp nạn trên chiếc trực thăng Mi 171 sáng 7/7.asdas asd as asd as as asd as as as as as as adsas as asdasd a sd asd asd asd asd asdasd asd asd asdas as asd asd asd asd as</span><!--</p>-->
+   
+ </div>    
+ <div id="top3">
+	   <div> 
+     <img src="/tintuc/dataupload/images/2011-07-02 18-32-06--hientruong1_dd02c.JPG.jpg" width="140" height="90" /><br>
+      <a href="news/sat-lo-kinh-hoang,-15-can-nha-sap,-chim-duoi-song.html">Sạt lở kinh hoàng, 15 căn nhà sập, chìm dưới sông</a> 
+   </div>
+  	   <div> 
+     <img src="/tintuc/dataupload/images/2011-07-02 18-27-52--caukyluc1.jpg" width="140" height="90" /><br>
+      <a href="news/Nhung-Cay-Cau-Ky-Vi-Nhat-The-Gioi.html">Những cây cầu kỳ vĩ nhất thế giới</a> 
+   </div>
+  	   <div> 
+     <img src="/tintuc/dataupload/images/2011-07-02 18-27-21--kilo.jpg" width="140" height="90" /><br>
+      <a href="news/Nga-Giao-Tau-Ngam-Cho-Viet-Nam-Vao-Nam-2014.html">Nga giao tàu ngầm cho Việt Nam vào năm 2014</a> 
+   </div>
+  	 </div>
+</div>
+   </div>
+</div>
+</div>
+    <div id="info">
+   	  <div id="info_1">Hôm nay<script type="text/javascript" src="HienNgayHomNay.js"></script></div>
+        <div id="info_2"><img src="hinh/co/vi.jpg" width="21" height="18" onclick="chuyenngonngu('vi')" 
+        title="Tiếng Việt" />
+        <img src="hinh/co/en.jpg" width="21" height="18" onclick="chuyenngonngu('en')" title="English" />
+        </div>
+        <div id="info_3">
+   	    <img src="hinh/icons/c1.jpg" width="10" height="10" />
+        <img src="hinh/icons/c2.jpg" width="10" height="10" />
+        <img src="hinh/icons/c3.jpg" width="10" height="10" />
+         </div>
+    
+    </div>
+    <div id="content2"><script>
+	$(document).ready(function(e) {
+        $("#timnangcao").click(function(){
+			$("#content1").load("formtimnangcao.php");
+			$("#info").hide();  $("#content2").hide();
+			$("#content1").css("width","785px");
+			return false;
+		});
+		
+		
+
+    });
+</script>
+<style>
+	#divtim {  height:50px; text-align:center }
+#divtim #formtim{ background-color:#FFF; margin: 0px; 
+	border: outset 2px #999966; padding-top: 5px; padding-bottom: 5px; } 
+#formtim #btntim{ line-height:5px;}
+#formtim #tukhoa { width:190px; height:20px; text-align:center; 
+	margin-left:10px; 	border: solid 1px #FFA806;}
+#formtim a { text-decoration:none; color:#000}
+#formtim a:hover{ font-weight:bold}
+
+
+
+</style>
+	<script>
+	
+        function Focus(object) {
+            object.value = "";
+        }
+ 
+        function Blur(object) {
+            if (object.value == "")
+                object.value = "";
+        }
+		$(document).ready(function(e) {
+            $("#formtim").submit(function(e) {
+				if ($("#tukhoa").val()=="")  {
+					alert("Ban Chua Nhap Tu Khoa"); return false;
+					}
+				return true
+                
+            }); 
+        });
+	
+        </script>
+<div id="divtim">
+<form onsubmit="this.action='/tintuc/search/'+document.formtim.tukhoa.value+'.html'" action="" method="post" name="formtim" id="formtim">
+<input name="view" type="hidden" id="view" value="search" />
+<input name="tukhoa" type="text" id="tukhoa" value="Tìm kiếm" onfocus="Focus(this)" onblur="Blur(this)">
+<input type="image" src="css/images/search.png" name="btntim" id="btntim" value=" Tìm " onclick="ValidateSearch()"><br />
+<a href="#" id="timnangcao">Tìm kiếm nâng cao</a>
+</form>
+</div>
+
+
+
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<div id="video">
+  
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="280" height="222" id="FLVPlayer">
+      <param name="movie" value="FLVPlayer_Progressive.swf" />
+      <param name="quality" value="high" />
+      <param name="wmode" value="opaque" />
+      <param name="scale" value="noscale" />
+      <param name="salign" value="lt" />
+      <param name="FlashVars" value="&amp;MM_ComponentVersion=1&amp;skinName=Corona_Skin_3&amp;streamName=video/KseniyaSimonova&amp;autoPlay=false&amp;autoRewind=false" />
+      <param name="swfversion" value="8,0,0,0" />
+      <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+      <param name="expressinstall" value="Scripts/expressInstall.swf" />
+      <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+      <!--[if !IE]>-->
+      <object type="application/x-shockwave-flash" data="FLVPlayer_Progressive.swf" width="300" height="255">
+        <!--<![endif]-->
+        <param name="quality" value="high" />
+        <param name="wmode" value="opaque" />
+        <param name="scale" value="noscale" />
+        <param name="salign" value="lt" />
+        <param name="FlashVars" value="&amp;MM_ComponentVersion=1&amp;skinName=Corona_Skin_3&amp;streamName=video/KseniyaSimonova&amp;autoPlay=false&amp;autoRewind=false" />
+        <param name="swfversion" value="8,0,0,0" />
+        <param name="expressinstall" value="Scripts/expressInstall.swf" />
+        <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+        <div>
+          <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+          <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+        </div>
+        <!--[if !IE]>-->
+      </object>
+      <!--<![endif]-->
+    </object>
+     
+</div>
+<script type="text/javascript">
+swfobject.registerObject("FLVPlayer");
+</script>
+</div>
+        <div id ="content3"><script>
+	$(document).ready(function(e) {
+        $("#btnbinhchon").click(function(){		
+		var idBC=$("#idBC").val();
+		var idPA=-1; 
+		$("[name='idPA']").each(function(){if (this.checked==true)idPA=this.value });//duyet tung phan tu ten la'idPA' neu checked thi lay gia tri cua phan tu do vao idPA 
+		if (idPA==-1) { alert("Bạn chưa chọn phương án nào"); return}
+		var data = "idBC=" + idBC + "&idPA=" + idPA; //alert(data);
+		$("#divbinhchon").load("ketqubinhchon.tco",data).hide().slideDown();//lay du lieu tu kqbc nap vao div binhchon
+});
+
+    });
+</script>
+<div id="divbinhchon">
+	<p class="capption">BÌNH CHỌN</p>
+    <p>Bạn thấy website này thế nào</p>
+    		<p><input type="radio" name="idPA" value="4"/>Rất đẹp</p>
+        
+			<p><input type="radio" name="idPA" value="5"/>Đẹp</p>
+        
+	<input type="hidden" name="idBC" id="idBC" value="2" />
+<p align="center"> <input type="button" value="Bình chọn" id="btnbinhchon"> </p>
+
+
+</div>
+
+    	<div id="userinfo"><br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: include(fuserinfo.php): failed to open stream: No such file or directory in C:\wamp\www\tintuc\home.php on line <i>242</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0010</td><td bgcolor='#eeeeec' align='right'>150728</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0040</td><td bgcolor='#eeeeec' align='right'>180552</td><td bgcolor='#eeeeec'>include( <font color='#00bb00'>'C:\wamp\www\tintuc\home.php'</font> )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>10</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: include(): Failed opening 'fuserinfo.php' for inclusion (include_path='.;C:\php\pear') in C:\wamp\www\tintuc\home.php on line <i>242</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0010</td><td bgcolor='#eeeeec' align='right'>150728</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0040</td><td bgcolor='#eeeeec' align='right'>180552</td><td bgcolor='#eeeeec'>include( <font color='#00bb00'>'C:\wamp\www\tintuc\home.php'</font> )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>10</td></tr>
+</table></font>
+</div>
+    </div>
+        <div id="quangcao"><img src="hinh/quangcao/qc3.gif" width="580" height="87" />
+    <img src="hinh/quangcao/qc5.gif" width="205" height="87" /> </div>
+        <div id="content4">
+     <style type="text/css">
+
+#tinmoi {width: 790px;}
+a{color:#000;}
+/*#tinmoi .rows { width:385px; float:left; margin-bottom:5px; 
+			margin-left:5px; margin-top:5px; }*/
+
+#tinmoi  #tinmoinhat {
+	width:330px;
+	float:left;
+	color:#000;
+	min-height: 175px;
+	margin-left:8px;
+	
+}
+
+#tinmoi  #tinmoitieptheo {
+	float:left;
+	width:230px;
+	min-height: 160px;
+	overflow: hidden;
+	/*white-space: nowrap;*/
+	border-left: solid 1px #CCC;
+	border-right: solid 1px #CCC;
+	/*margin-bottom:5px;
+	padding:0 10px;*/
+}
+#tinmoi  #theloai {
+	font-size:18px; color:#000;
+	padding-top:5px; padding-bottom:5px; clear:left;
+	border-top:solid 1px #0033FF;
+	border-bottom:dotted 1px  #0033FF;
+	margin-bottom:5px;
+	
+}
+#tinmoi  #theloai a {
+	color:#000; text-decoration:none; margin-left:10px; font-size:16px;}
+	#tinmoi  #theloai a:first-child {
+	color:#03F;}
+#tinmoi #theloai a:hover{ color:#6CC; text-decoration:none; }
+
+#tinmoi  #tinmoinhat a {
+	text-decoration:none; color:#003366; 
+	font-size:16px; font-weight:bold;
+}
+#tinmoi #tinmoinhat a:hover{ text-decoration:none; color:#06F}
+#tinmoi  #tinmoinhat img {	margin-right: 5px; }
+#tinmoinhat p{text-align:justify;margin-right:5px;}
+#tinmoi  #tinmoitieptheo a {
+	font-size:14px;
+	text-decoration:none;
+	color:#003333;
+	font-weight:bold;
+	/*margin-bottom:5px;*/
+}
+#tinmoi #tinmoitieptheo a:hover{/*text-decoration:underline;*/ color:#06F}
+#tinmoi  #tinmoitieptheo p {
+	margin-top:5px; margin-bottom:5px; padding:0 5px;
+}
+#tinphu{
+		float: left;
+    	margin:10px  0 0 45px;
+   		 width: 15%;
+	
+	}
+	#tinphu a {
+			text-decoration:none;
+			
+			
+			
+		}
+	#tinphu img {margin-bottom:0px;}
+	#tinphu a:hover{color:#09F }
+	#tinphu h4{margin-top:5px; text-align:center;}
+	#tinmoinhat p{margin-top:5px; font-size:15px;}
+</style>
+<script>
+$(document).ready(function(e) {
+    var sotheloai= $(".rows").length;	
+	if (sotheloai%2==1) $('.rows:last').css('width','790px');
+	$('#tinmoi').corner("5px"); $('.rows #theloai').corner('5px top');
+	$('.rows #tinmoitieptheo').corner('5px bottom');
+});
+	
+
+
+
+</script>
+	
+
+
+<div id="tinmoi">
+		<div class=rows>
+  <div id="theloai"> <a href="#">Tin xã hội</a><a href="cat/The-Thao/">Thể thao</a><a href="cat/tham-hiem/">Thám Hiểm</a><a href="cat/Xa-Hoi/">Xã hội</a><a href="cat/Khoa-Hoc/">Khoa học</a><a href="cat/Van-Hoa/">Văn hoá</a><a href="cat/Giao-Duc/">Giáo dục</a><a href="cat/Phap-Luat/">Pháp luật</a>      </div>
+  <!-- div theloai -->
+  <div id="tinmoinhat">
+  	    <a href="news/con-gai-thieu-ta-huan-luyen-du-hy-sinh-sao-bo-van-chua-ve.html"  > Con gái Thiếu tá huấn luyện dù hy sinh: 'Sao bố vẫn chưa về?'</a>
+    <p> <img src="/tintuc/upload/images/Desert.jpg" width="210" height="110" align="left" />
+         Bất ngờ, tiếc thương nhưng cũng đầy tự hào là cảm xúc của người thân, đồng đội Thiếu tá Đặng Thành Chung (huấn luyện viên dù 48 tuổi) và các chiến sĩ gặp nạn trên chiếc trực thăng Mi 171 sáng 7/7.asdas asd as asd as as asd as as as as as as adsas as asdasd a sd asd asd asd asd asdasd asd asd asdas as asd asd asd asd as 
+    </p>
+  </div> <!-- tinmoinhat -->
+  <div id="tinmoitieptheo">
+                   	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/brazil-duc-99-selecao-thua-tran.html">Brazil - Đức: 99% Selecao thua trận</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/sat-lo-kinh-hoang,-15-can-nha-sap,-chim-duoi-song.html">Sạt lở kinh hoàng, 15 căn nhà sập, chìm dưới sông</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/hanh-trinh-28-nam-cua-mot-uoc-mo.html">Hành trình 28 năm của một ước mơ</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Argentina-Gay-That-Vong-Trong-Tran-Ra-Quan-Copa-America.html">Argentina gây thất vọng trong trận ra quân Copa America</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Nhung-Cay-Cau-Ky-Vi-Nhat-The-Gioi.html">Những cây cầu kỳ vĩ nhất thế giới</a></p>
+            
+  </div> 
+   <!-- div id=tinmoitieptheo -->
+   <div id="tinphu">
+   		                 	<img src="/tintuc/dataupload/images/2011-07-02 18-27-21--kilo.jpg" width="140" height="110" align="center" />
+            <h4><a href="news/Nga-Giao-Tau-Ngam-Cho-Viet-Nam-Vao-Nam-2014.html"  >Nga giao tàu ngầm cho Việt Nam vào năm 2014</a></h4>
+           
+   </div>
+
+ 
+
+ </div> 
+	<div class=rows>
+  <div id="theloai"> <a href="#">Thế giới web</a><a href="cat/Tin-Tuc-Web/">Tin tức web</a><a href="cat/Tools/">Tools</a><a href="cat/Website-Huu-Ich/">Website hữu ích</a><a href="cat/Scripts-Huu-Dung/">Scripts hữu dụng</a>      </div>
+  <!-- div theloai -->
+  <div id="tinmoinhat">
+  	    <a href="news/am-lich.html"  > Âm lịch</a>
+    <p> <img src="/tintuc/upload/images/Hydrangeas.jpg" width="210" height="110" align="left" />
+         Nếu muốn chèn lịch vào trang web , có cả âm lịch thì vào địa chỉ: 
+    </p>
+  </div> <!-- tinmoinhat -->
+  <div id="tinmoitieptheo">
+                   	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Www.Socnhi.Com.html">www.socnhi.com</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Cong-Cu-Dich-Anh-–-Viet-Truc-Tuyen.html">Công cụ dịch Anh – Việt trực tuyến </a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Dia-Chi-Download.html">Địa chỉ download</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Du-Loai-Tool-Cho-Csdl,-Ung-Dung-Van-Phong-....html">Đủ loại tool cho CSDL, ứng dụng văn phòng ...</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Thiet-Ke-Nut-3D.html">Thiết kế nút 3D</a></p>
+            
+  </div> 
+   <!-- div id=tinmoitieptheo -->
+   <div id="tinphu">
+   		                 	<img src="/tintuc/upload/images/webos.jpg" width="140" height="110" align="center" />
+            <h4><a href="news/cac-trang-web-tai-font.html"  >Các trang web tải font</a></h4>
+           
+   </div>
+
+ 
+
+ </div> 
+	<div class=rows>
+  <div id="theloai"> <a href="#">Nghệ thuật sống</a><a href="cat//">Chia sẻ</a><a href="cat/Song-Dep/">Sống đẹp</a>      </div>
+  <!-- div theloai -->
+  <div id="tinmoinhat">
+  	    <a href="news/Thieu-Nu-Mac-Hai-Trong-Benh-Bat-Luc-Cho-Chet.html"  > Thiếu nữ mắc hai trọng bệnh bất lực chờ chết</a>
+    <p> <img src="/tintuc/dataupload/images/2011-06-29 09-39-35--mu.jpg" width="210" height="110" align="left" />
+         Dù đang ở tuổi đẹp nhất - 18 - nhưng cuộc sống của Hoa chỉ là bóng đêm và nước mắt, chưa kể những cơn đau tim có thể hành hạ cô bất cứ lúc nào. Cô gái trẻ không còn hy vọng vào cuộc sống. 
+    </p>
+  </div> <!-- tinmoinhat -->
+  <div id="tinmoitieptheo">
+                   	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Mong-Uoc-Cua-Mot-Ngu-Dan-Tre.html">Mong ước của một ngư dân trẻ</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Chi-Can-Co-Bo,-Long-Con-Thay-Am-Hon.html">Chỉ cần có bố, lòng con thấy ấm hơn</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Mat-Mat.html">Mất mát</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Nguoi-Hanh-Khat-Mu-Tro-Thanh-Nha-Van.html">Người hành khất mù trở thành nhà văn</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Vo-Chong-Tre-29-Lan-Hien-Mau-Tinh-Nguyen.html">Vợ chồng trẻ 29 lần hiến máu tình nguyện</a></p>
+            
+  </div> 
+   <!-- div id=tinmoitieptheo -->
+   <div id="tinphu">
+   		                 	<img src="/tintuc/dataupload/images/2011-06-27 07-05-43--hoanghauA276_aadc9.jpg" width="140" height="110" align="center" />
+            <h4><a href="news/Khoang-Lang-O-Thanh-Pho-Ngan-Hoa-Nha-Trang.html"  >Khoảng lặng ở thành phố ngàn hoa Nha Trang</a></h4>
+           
+   </div>
+
+ 
+
+ </div> 
+	<div class=rows>
+  <div id="theloai"> <a href="#">Công nghệ</a><a href="cat/San-Pham-Moi/">Sản phẩm mới</a><a href="cat//">Vi tính</a>      </div>
+  <!-- div theloai -->
+  <div id="tinmoinhat">
+  	    <a href="news/Cu-Dan-Mang-Hao-Hung-Voi-Lan-Gio-Moi-Google+.html"  > Cư dân mạng hào hứng với làn gió mới Google+</a>
+    <p> <img src="/tintuc/dataupload/images/2011-07-02 18-26-47--Plus-012.jpg" width="210" height="110" align="left" />
+         Khác hẳn thái độ thờ ơ khi Google Buzz và Google Wave xuất hiện, hai ngày nay, cộng đồng người dùng Internet ở Việt Nam rất sốt sắng tìm cách tham gia mạng xã hội mới Google Plus. 
+    </p>
+  </div> <!-- tinmoinhat -->
+  <div id="tinmoitieptheo">
+                   	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/"Xem"-Microsoft-Lam-Moi-Skype.html">
+                        "Xem" Microsoft làm mới Skype
+</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Google-Sap-Ra-Mat-Mang-Xa-Hoi-Google+.html">Google sắp ra mắt mạng xã hội Google+</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Google+-Tham-Vong-Thay-Doi-Cach-Chia-Se-Tren-Web.html">Google+ tham vọng thay đổi cách chia sẻ trên web</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Microsoft-Cho-Dung-Word,-Excel,-Powerpoint-Tren-Web.html">Microsoft cho dùng Word, Excel, PowerPoint trên web</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Mozilla-Chinh-Thuc-Trinh-Lang-Firefox-5.0-Cho-Android.html">Mozilla chính thức trình làng Firefox 5.0 cho Android</a></p>
+            
+  </div> 
+   <!-- div id=tinmoitieptheo -->
+   <div id="tinphu">
+   		                 	<img src="/tintuc/dataupload/images/2011-06-25 18-41-55--Ten-mien-TG.jpg" width="140" height="110" align="center" />
+            <h4><a href="news/Mo-Rong-Ten-Mien-Quoc-Te.html"  >Mở rộng tên miền quốc tế</a></h4>
+           
+   </div>
+
+ 
+
+ </div> 
+	<div class=rows>
+  <div id="theloai"> <a href="#">Việc làm</a>      </div>
+  <!-- div theloai -->
+  <div id="tinmoinhat">
+  	    <a href="news/.html"  > </a>
+    <p> <img src="" width="210" height="110" align="left" />
+          
+    </p>
+  </div> <!-- tinmoinhat -->
+  <div id="tinmoitieptheo">
+               
+  </div> 
+   <!-- div id=tinmoitieptheo -->
+   <div id="tinphu">
+   		            
+   </div>
+
+ 
+
+ </div> 
+	<div class=rows>
+  <div id="theloai"> <a href="#">Thư giãn</a><a href="cat/Tho-Hay/">Thơ hay</a>      </div>
+  <!-- div theloai -->
+  <div id="tinmoinhat">
+  	    <a href="news/bai-tho-co-8-cach-doc.html"  > BÀi thơ có 8 cách đọc</a>
+    <p> <img src="/tintuc/upload/images/phongcanh.jpg" width="210" height="110" align="left" />
+         Đây là một bài thơ thật kỳ lạ. Có đến 8 cách đọc khác nhau 
+    </p>
+  </div> <!-- tinmoinhat -->
+  <div id="tinmoitieptheo">
+                   	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Yeu.html">Yêu</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Ngay-Xua-Du-Am....html">Ngày Xưa Dư Âm...  </a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Binh-Kho-Dap-Chen-Ca-Cuoi-Voi-Nhau.html">Bình khô đập chén cả cười với nhau </a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Loi-Vang-Cua-Sep.html">Lời vàng của sếp</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Bai-Tho-Tieng-Thu-Cua-Luu-Trong-Lu.html">Bài thơ Tiếng Thu của Lưu Trọng Lư </a></p>
+            
+  </div> 
+   <!-- div id=tinmoitieptheo -->
+   <div id="tinphu">
+   		            
+   </div>
+
+ 
+
+ </div> 
+	<div class=rows>
+  <div id="theloai"> <a href="#">Thường thức </a><a href="cat/Meo-Vat/">Mẹo vặt</a><a href="cat/Suc-Khoe/">Sức khỏe</a>      </div>
+  <!-- div theloai -->
+  <div id="tinmoinhat">
+  	    <a href="news/Cho-Tre-Suc-Mieng-Bang-Sua-Chua-Khi-An-Phai-Ot.html"  > 
+                        Cho trẻ súc miệng bằng sữa chua khi ăn phải ớt
+</a>
+    <p> <img src="/tintuc/dataupload/images/2011-07-02 09-18-16--otjpeg-043505.jpg" width="210" height="110" align="left" />
+         
+                                     Do t&iacute;nh hiếu động trẻ nh&agrave; bạn đ&atilde; nghịch v&agrave; nếm những quả ớt đỏ bạn để  tr&ecirc;n b&agrave;n ăn, hậu quả l&agrave; b&eacute; sẽ kh&oacute;c th&eacute;t l&ecirc;n v&igrave; cay miệng. Trong trường  hợp n&agrave;y mẹ cần phải l&agrave;m g&igrave; để gi&uacute;p b&eacute; đ&acirc;y?
+ 
+    </p>
+  </div> <!-- tinmoinhat -->
+  <div id="tinmoitieptheo">
+                   	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Bi-Quyet-Chon-Qua-Vai-Ngon.html">
+                        Bí quyết chọn quả vải ngon
+</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Nhung-Thoi-Quen-Co-Hai-Cho-Rang.html">
+                        Những thói quen có hại cho răng
+</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/An-Nhieu-Rau-Qua-De-Co-Lan-Da-Trang-Hong.html">
+                        Ăn nhiều rau quả để có làn da trắng hồng
+</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Nhung-Trieu-Chung-Ung-Thu-Khong-The-Bo-Qua.html">Những triệu chứng ung thư không thể bỏ qua</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Mat-Na-Tu-Bo.html">
+                        Mặt nạ từ bơ
+</a></p>
+            
+  </div> 
+   <!-- div id=tinmoitieptheo -->
+   <div id="tinphu">
+   		                 	<img src="/tintuc/dataupload/images/2011-06-28 18-49-41--Untitled1jpg-071958.jpg" width="140" height="110" align="center" />
+            <h4><a href="news/De-Phong-Tai-Nan-Ve-Dien.html"  >
+                        Đề phòng tai nạn về điện
+</a></h4>
+           
+   </div>
+
+ 
+
+ </div> 
+	<div class=rows>
+  <div id="theloai"> <a href="#">Thiên nhiên</a><a href="cat/phong-canh/">Phong cảnh</a><a href="cat/Dong-Vat/">Động vật</a>      </div>
+  <!-- div theloai -->
+  <div id="tinmoinhat">
+  	    <a href="news/Anh-Vu-Tru-An-Tuong-Tuan-Qua.html"  > Ảnh vũ trụ ấn tượng tuần qua</a>
+    <p> <img src="/tintuc/dataupload/images/2011-06-27 07-28-40--1.jpg" width="210" height="110" align="left" />
+         Mặt trăng đỏ ối vì nguyệt thực, yên nghỉ trên dải dải ngân hà, là một trong những hình ảnh vũ trụ ấn tượng tuần qua được đăng tải trên National Geographic. 
+    </p>
+  </div> <!-- tinmoinhat -->
+  <div id="tinmoitieptheo">
+                   	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Vet-Thong-Minh-Nhu-Nguoi.html">Vẹt thông minh như người</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Nam-Loai-Dong-Vat-Co-Nguy-Co-Tuyet-Chung.html">Năm loài động vật có nguy cơ tuyệt chủng</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Nhung-Ong-Bo-Tuyet-Voi-Trong-The-Gioi-Dong-Vat.html">Những ông bố tuyệt vời trong thế giới động vật</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Anh-Dep-Vu-Tru-Trong-Tuan.html">Ảnh đẹp vũ trụ trong tuần</a></p>
+                	<p><!--<img src="hinh/icons/arrow1.gif" />-->- <a href="news/Khi-Treu-Cho.html">Khỉ trêu chó</a></p>
+            
+  </div> 
+   <!-- div id=tinmoitieptheo -->
+   <div id="tinphu">
+   		                 	<img src="/tintuc/dataupload/images/2011-06-16 10-35-27--ech.jpg" width="140" height="110" align="center" />
+            <h4><a href="news/Phat-Hien-Loai-Ech-Cay-San-Taylo-O-Quang-Ngai.html"  >Phát hiện loài ếch cây sần Taylo ở Quảng Ngãi</a></h4>
+           
+   </div>
+
+ 
+
+ </div> 
+</div><!-- tinmoi -->
+      
+    </div>
+    <div id="footer">footer</div>
+
+
+</div>
+
+</body>
+</html>

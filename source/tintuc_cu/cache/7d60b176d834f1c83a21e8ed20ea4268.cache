@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<base href="http://localhost:81/tintuc/"  />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+	
+			function chuyenngonngu(lang){
+		$.cookie("lang",lang, {exprire:7,path:'/tintuc/'}) ;
+		document.location='/tintuc/';
+	   //window.location.reload();
+}
+	$(document).ready(function(e) {
+				$.ajax({
+			url:'userinfo.php', cache:false,
+			success:function(d){ $("#userinfo").html(d); }
+		})
+				
+
+    });
+
+  
+
+</script>
+<script type="text/javascript" src="js/jquery.cookie.js">
+	
+</script>	
+<title>Samsung Medical Center gives cardiac surgeries to kids</title>
+
+<style>
+body {
+		
+		background:url(css/images/pattern.gif) ;
+	
+		
+	}
+	#container
+	{
+		width:990px;	
+		margin:auto;	
+	}
+	#header
+	{
+		
+		height:180px;
+		background-color:#0CF;
+		
+	}
+	#menu
+	{height:37px;
+	background-color:#990;
+
+	margin-top:3px;
+	
+	}
+	#content1{
+		
+		height:340px;
+		width:485px;
+		background-color:#FFF;
+		float:left;
+		margin-top:3px;
+		margin-right:3px;
+		border:solid 1px #CCCCCC;
+		
+		
+		
+		}	
+		#content2
+		{
+			width:300px;
+			height:310px;		
+			float:left;
+			background-color:#0C6;
+			margin-top:3px;
+			
+		}
+		#content3
+		{
+			width:197px;
+			min-height:800px;
+			float:right;
+			background-color:#60F;
+			margin-top:3px;
+			margin-left:3px;
+		}
+		#info
+		{
+			height:30px;
+			background-color:#F00;
+			width:500px;
+			float:left;
+			margin-top:3px;
+			
+		}
+		#quangcao
+		{
+			width:790px;
+			height:87px;
+			float:left;
+			background-color:#F00;
+			margin-top:3px;
+		}
+		#content4
+		{
+			width:790px;
+			min-height:397px;
+			background-color:#FFF;
+			float:left;
+			margin-top:3px;
+			margin-bottom:3px;
+			
+		}
+		#footer
+		{height:150px;
+		background-color:#000;
+		clear:both;
+		
+		
+		
+	}
+
+	#info_1{
+		
+			width:300px;
+			height:30px;
+			line-height:30px;
+			background-color:#FFF;
+			float:left;	
+			text-align:center;
+		
+		}
+		#info_2{
+			width:80px;
+			height:30px;
+			float:left;
+			text-align:center;
+			background-color:#3F0;
+		
+		}
+		#info_2 img{margin-top:5px;}
+		#info_3{
+			height:30px;
+			background-color:#0CF;
+			text-align:center;
+		
+		}
+		#info_3 img{
+			margin-top:5px;
+		}
+	.pagination_news {
+					width:100%;
+					clear:both;
+					padding:10px 0 10px 0;
+					margin:0px;
+					text-align:right;
+					float:left;
+					clear:both;
+					font-size:11px;
+					
+					}
+					
+					.pagination_news a {
+					padding: 5px 10px 5px 10px;
+					margin:5px;
+					border: 1px solid #52bfea;
+					text-decoration: none; 
+					color: #000;
+					box-shadow:3px 3px 3px #000;
+					}
+					.pagination_news span
+					{
+						padding: 5px 10px 5px 10px;
+					background-color:#CCC;
+						color:#000;
+						border-radius:3px;
+						box-shadow:3px 3px 3px #000;
+						
+						margin:0 5px 0 5px;
+						text-decoration:none;
+						border:solid 1px  #52bfea;}
+					.pagination_news a:hover, .pagination_news a:active {
+					border:1px solid #52bfea;
+					color: #fff;
+					background-color: #52bfea;
+					}
+					.pagination_news span.current {
+					padding: 2px 5px 2px 5px;
+					margin-right: 2px;
+					border: 1px solid #52bfea;
+					font-weight: bold;
+					background-color: #52bfea;
+					color: #FFF;
+					}
+					.pagination_news span.disabled {
+					padding: 2px 5px 2px 5px;
+					margin-right: 2px;
+					border: 1px solid #f3f3f3;
+					color: #ccc;
+					}
+
+</style>
+</head>
+
+<body>
+<div id="container">
+	<div id="header"><img src="hinh/banner2.jpg" width="990" height="180" /></div>
+    <div id="menu"><script type="text/javascript" src="apycom.com-8-deep-sky-blue/menu.js"></script>
+<link rel="stylesheet" type="text/css" href="apycom.com-8-deep-sky-blue/menu.css"/>
+
+<div id="menu">
+    <ul class="menu">
+    <li><a href="/tintuc/" ><span>Home page</span></a></li>
+              <li><a href="#" class="parent"><span>Travel</span></a>
+               <div>               		<ul>                  <li><a href="cat/Community.html" class="parent"><span>Community</span></a>
+                                      <li><a href="cat/Around-The-Country.html" class="parent"><span>Around the Country</span></a>
+                                      <li><a href="cat/Arts.html" class="parent"><span>Arts</span></a>
+                                      <li><a href="cat/Food.html" class="parent"><span>Food</span></a>
+                                      <li><a href="cat/Travelers-Guide.html" class="parent"><span>Traveler's Guide</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Business</span></a>
+               <div>               		<ul>                  <li><a href="cat/Property-News.html" class="parent"><span>Property News</span></a>
+                                      <li><a href="cat/Environment.html" class="parent"><span>Environment</span></a>
+                                      <li><a href="cat/Financial-Markets.html" class="parent"><span>Financial Markets</span></a>
+                                      <li><a href="cat/infrastructure-news.html" class="parent"><span>Infrastructure News</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>LifeStyle & Living</span></a>
+               <div>               		<ul>                  <li><a href="cat/Saigon-Stories.html" class="parent"><span>Saigon Stories</span></a>
+                                      <li><a href="cat/People.html" class="parent"><span>People</span></a>
+                                      <li><a href="cat/Healthcare.html" class="parent"><span>Healthcare</span></a>
+                                      <li><a href="cat/Education.html" class="parent"><span>Education</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Entertainment </span></a>
+               <div>               		<ul>                  <li><a href="cat/Movies.html" class="parent"><span>Movies</span></a>
+                                      <li><a href="cat/Tourism-News.html" class="parent"><span>Tourism News</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+               </ul>
+   </div>
+	    </div>
+    	    <div id ="content3"><script>
+	$(document).ready(function(e) {
+        $("#btnbinhchon").click(function(){		
+		var idBC=$("#idBC").val();
+		var idPA=-1; 
+		$("[name='idPA']").each(function(){if (this.checked==true)idPA=this.value });//duyet tung phan tu ten la'idPA' neu checked thi lay gia tri cua phan tu do vao idPA 
+		if (idPA==-1) { alert("Bạn chưa chọn phương án nào"); return}
+		var data = "idBC=" + idBC + "&idPA=" + idPA; //alert(data);
+		$("#divbinhchon").load("ketqubinhchon.tco",data).hide().slideDown();//lay du lieu tu kqbc nap vao div binhchon
+});
+
+    });
+</script>
+<div id="divbinhchon">
+	<p class="capption">Poll CapTion</p>
+    <p>Sở thích của bạn là gì</p>
+    		<p><input type="radio" name="idPA" value="1"/>Nhìn mưa rơi</p>
+        
+			<p><input type="radio" name="idPA" value="2"/>Nghe chim hót</p>
+        
+			<p><input type="radio" name="idPA" value="3"/>Ngắm mây bay</p>
+        
+	<input type="hidden" name="idBC" id="idBC" value="1" />
+<p align="center"> <input type="button" value="Bình chọn" id="btnbinhchon"> </p>
+
+
+</div>
+
+    	<div id="userinfo"><br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: include(fuserinfo.php): failed to open stream: No such file or directory in C:\wamp\www\tintuc\home.php on line <i>242</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0010</td><td bgcolor='#eeeeec' align='right'>153208</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0030</td><td bgcolor='#eeeeec' align='right'>183032</td><td bgcolor='#eeeeec'>include( <font color='#00bb00'>'C:\wamp\www\tintuc\home.php'</font> )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>10</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: include(): Failed opening 'fuserinfo.php' for inclusion (include_path='.;C:\php\pear') in C:\wamp\www\tintuc\home.php on line <i>242</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0010</td><td bgcolor='#eeeeec' align='right'>153208</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0030</td><td bgcolor='#eeeeec' align='right'>183032</td><td bgcolor='#eeeeec'>include( <font color='#00bb00'>'C:\wamp\www\tintuc\home.php'</font> )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>10</td></tr>
+</table></font>
+</div>
+    </div>
+        <div id="content4">
+     
+<style>
+	#path{ background-color:#999900; color:#003366; font-weight:bold;
+	    padding-top:5px; padding-bottom:5px; }
+#chitiettin_left{ float:left; width:535px;; background-color:#FFF;padding-right:3px;}
+#chitiettin_right{ float:left; width:250px; background-color:#FFF; border:solid 1px #000; }
+#chitiettin #tin_tieude{ font-weight:bold; color:#003366; }
+#chitiettin #tin_tomtat{ 
+color:#000; text-align:justify; border-bottom:#CC3300 1px solid; 
+padding-bottom:12px; padding-right:5px; font-size:16px}
+#chitiettin #tin_noidung{ text-align:justify; background-color:#FFF;}
+#chitiettin .ngay{ color:#036;  font-style:italic; text-align:right}
+/*#util{
+		
+	}
+#tinmoihon{
+			text-align:center;	
+	}
+#tincuhon{}
+.caption{
+		
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 2px 0 #fcfafa;
+    height: auto;
+    margin-bottom: 0;
+    padding: 8px 10px 0;	
+	display:inline-table;
+	}
+	#tincuhon {
+			text-align:center;	
+			color:#000;
+			
+	}
+	#tincuhon p{border-top:solid 1px #000000;padding-top:5px;}
+	#tincuhon a{text-decoration:none; color:#000;}*/
+	#util {  padding-top:15px; padding-bottom:15px; background-color:#993300;
+		color:#99FF00; text-align:center}
+#util  a{ color:#99FF00; font-weight:bold; text-decoration:none}
+#util  a:hover{ color:#003366}
+
+#tinmoihon, #tincuhon{ margin-top:10px}
+#tinmoihon .caption, #tincuhon .caption {  
+	color:#66FFFF; font-weight:bold; padding-left:10px; 
+text-transform:uppercase; display:block; background-color:#CC9900;
+	padding-bottom:5px; padding-top:5px; border-bottom:solid 1px #99FF00;}
+#tinmoihon a, #tincuhon a{ 
+	color:#990033; text-decoration:none; margin-left:10px; display:block; 
+	padding-top:5px; padding-bottom:5px; border-bottom:dotted 1px #990066; }
+</style>
+<script>
+	$(document).ready(function(e) {
+       $("#banin").click(function(){
+    $("#header").hide();      $("#menu").hide();
+    $("#content1").hide();    $("#content2").hide();
+    $("#info").hide();        $("#content3").hide();
+    $("#footer").hide();      $("#util").hide();
+    $("#chitiettin_right").hide();
+    $("#chitiettin").css("width","990px");
+    $("#chitiettin_left").css("width","990px");
+    $("#path").css("width","990px");
+	/*window.print() ;*/
+    return false; });
+	
+		
+    });
+</script>
+
+
+<div id=path>Home page/Travel/Arts</div>
+<div id="chitiettin">
+    <div id="chitiettin_left">
+       <p id="tin_tieude"> Samsung Medical Center gives cardiac surgeries to kids </p>
+       <p id="tin_tomtat">
+       <img src="/tintuc/dataupload/images/312.jpg" width=70 height=70 align=left>
+       A group of doctors of the Samsung Medical Center in Seoul, South Korea, has collaborated with doctors of Vietnam National Hospital of Pediatrics to give healthcare checkups and surgeries to over 20 children with congenital heart disease. The move is one of the activities of the program Heart to Heart.        </p>
+       <div id="tin_noidung"> 
+<p>To give 
+children more chances to access high-tech treatment, the Samsung Medical
+ Center has donated medical equipment, facilities and training courses 
+to Vietnamese doctors at the hospital. Doctor Lee Heung Jae from the 
+center has given the hospital ATC medicine with the function of 
+coagulating blood for the hospital’s third surgery room.</p>
+
+<p>Heart to Heart was launched in 2003 to help children with cardiac 
+disease and to upgrade facilities and improve the skills of the doctors 
+at the hospital. Until now, the program has provided surgeries for over 
+820 patients and given many workshops and training courses at the center
+ and at the hospital for Vietnamese doctors.</p>
+
+<p>As one of the founders of the program, Samsung Vina donated 
+US$250,000 between 2003 and 2007 and pledged to donate US$300,000 from 
+2008 to 2012.</p> </div> 
+     </div>
+     <div id="chitiettin_right"> 
+     		<div id="util">
+    <a href="#" id="banin"> Bản in </a> &nbsp; 
+     Xem:  250. 
+     Đăng:  13/04/2010              
+				</div>
+				                 				 
+                <div id="tincuhon">         
+                    <span class="caption">Older News</span>
+                   
+                                            <p> <img src="/tintuc/dataupload/images/310.jpg"  width="140" height="110" align="center"/></p>
+                        <a href="news/Wild-Banana-Flowers’-Beauty-In-A-Hanoi-Artist’S-Paintings.html"> 
+						Wild banana flowers’ beauty in a Hanoi...</a>
+                                            <p> <img src=""  width="140" height="110" align="center"/></p>
+                        <a href="news/Bac-Ninh-Sets-Vietnamese-Guinness-Record-For-Collage.html"> 
+						Bac Ninh sets Vietnamese Guinness record...</a>
+                                            <p> <img src="/tintuc/dataupload/images/308.jpg"  width="140" height="110" align="center"/></p>
+                        <a href="news/Chaotic-Order.html"> 
+						Chaotic Order  ...</a>
+                                            <p> <img src="/tintuc/dataupload/images/307.jpg"  width="140" height="110" align="center"/></p>
+                        <a href="news/Bids-On-Le-Pho’S-Paintings-Begin-At-Us$200,000.html"> 
+						Bids on Le Pho’s paintings begin at US...</a>
+                                            <p> <img src="/tintuc/dataupload/images/306.jpg"  width="140" height="110" align="center"/></p>
+                        <a href="news/Many-Records-Set-At-Calligraphers’-Meeting.html"> 
+						Many records set at calligraphers’ mee...</a>
+                    			</div>
+			      </div>     
+</div>
+
+      
+    </div>
+    <div id="footer">footer</div>
+
+
+</div>
+
+</body>
+</html>

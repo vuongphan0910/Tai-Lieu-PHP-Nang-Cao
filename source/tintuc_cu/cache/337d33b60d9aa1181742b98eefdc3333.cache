@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<base href="http://localhost:81/tintuc/"  />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+	
+			function chuyenngonngu(lang){
+		$.cookie("lang",lang, {exprire:7,path:'/tintuc/'}) ;
+		document.location='/tintuc/';
+	   //window.location.reload();
+}
+	$(document).ready(function(e) {
+				$.ajax({
+			url:'userinfo.php', cache:false,
+			success:function(d){ $("#userinfo").html(d); }
+		})
+				
+
+    });
+
+  
+
+</script>
+<script type="text/javascript" src="js/jquery.cookie.js">
+	
+</script>	
+<title>Sản phẩm mới</title>
+
+<style>
+body {
+		
+		background:url(css/images/pattern.gif) ;
+	
+		
+	}
+	#container
+	{
+		width:990px;	
+		margin:auto;	
+	}
+	#header
+	{
+		
+		height:180px;
+		background-color:#0CF;
+		
+	}
+	#menu
+	{height:37px;
+	background-color:#990;
+
+	margin-top:3px;
+	
+	}
+	#content1{
+		
+		height:340px;
+		width:485px;
+		background-color:#FFF;
+		float:left;
+		margin-top:3px;
+		margin-right:3px;
+		border:solid 1px #CCCCCC;
+		
+		
+		
+		}	
+		#content2
+		{
+			width:300px;
+			height:310px;		
+			float:left;
+			background-color:#0C6;
+			margin-top:3px;
+			
+		}
+		#content3
+		{
+			width:197px;
+			min-height:800px;
+			float:right;
+			background-color:#60F;
+			margin-top:3px;
+			margin-left:3px;
+		}
+		#info
+		{
+			height:30px;
+			background-color:#F00;
+			width:500px;
+			float:left;
+			margin-top:3px;
+			
+		}
+		#quangcao
+		{
+			width:790px;
+			height:87px;
+			float:left;
+			background-color:#F00;
+			margin-top:3px;
+		}
+		#content4
+		{
+			width:790px;
+			min-height:397px;
+			background-color:#FFF;
+			float:left;
+			margin-top:3px;
+			margin-bottom:3px;
+			
+		}
+		#footer
+		{height:150px;
+		background-color:#000;
+		clear:both;
+		
+		
+		
+	}
+
+	#info_1{
+		
+			width:300px;
+			height:30px;
+			line-height:30px;
+			background-color:#FFF;
+			float:left;	
+			text-align:center;
+		
+		}
+		#info_2{
+			width:80px;
+			height:30px;
+			float:left;
+			text-align:center;
+			background-color:#3F0;
+		
+		}
+		#info_2 img{margin-top:5px;}
+		#info_3{
+			height:30px;
+			background-color:#0CF;
+			text-align:center;
+		
+		}
+		#info_3 img{
+			margin-top:5px;
+		}
+	.pagination_news {
+					width:100%;
+					clear:both;
+					padding:10px 0 10px 0;
+					margin:0px;
+					text-align:right;
+					float:left;
+					clear:both;
+					font-size:11px;
+					
+					}
+					
+					.pagination_news a {
+					padding: 5px 10px 5px 10px;
+					margin:5px;
+					border: 1px solid #52bfea;
+					text-decoration: none; 
+					color: #000;
+					box-shadow:3px 3px 3px #000;
+					}
+					.pagination_news span
+					{
+						padding: 5px 10px 5px 10px;
+					background-color:#CCC;
+						color:#000;
+						border-radius:3px;
+						box-shadow:3px 3px 3px #000;
+						
+						margin:0 5px 0 5px;
+						text-decoration:none;
+						border:solid 1px  #52bfea;}
+					.pagination_news a:hover, .pagination_news a:active {
+					border:1px solid #52bfea;
+					color: #fff;
+					background-color: #52bfea;
+					}
+					.pagination_news span.current {
+					padding: 2px 5px 2px 5px;
+					margin-right: 2px;
+					border: 1px solid #52bfea;
+					font-weight: bold;
+					background-color: #52bfea;
+					color: #FFF;
+					}
+					.pagination_news span.disabled {
+					padding: 2px 5px 2px 5px;
+					margin-right: 2px;
+					border: 1px solid #f3f3f3;
+					color: #ccc;
+					}
+
+</style>
+</head>
+
+<body>
+<div id="container">
+	<div id="header"><img src="hinh/banner2.jpg" width="990" height="180" /></div>
+    <div id="menu"><script type="text/javascript" src="apycom.com-8-deep-sky-blue/menu.js"></script>
+<link rel="stylesheet" type="text/css" href="apycom.com-8-deep-sky-blue/menu.css"/>
+
+<div id="menu">
+    <ul class="menu">
+    <li><a href="/tintuc/" ><span>Trang chủ</span></a></li>
+              <li><a href="#" class="parent"><span>Tin xã hội</span></a>
+               <div>               		<ul>                  <li><a href="cat/The-Thao.html" class="parent"><span>Thể thao</span></a>
+                                      <li><a href="cat/tham-hiem.html" class="parent"><span>Thám Hiểm</span></a>
+                                      <li><a href="cat/Xa-Hoi.html" class="parent"><span>Xã hội</span></a>
+                                      <li><a href="cat/Khoa-Hoc.html" class="parent"><span>Khoa học</span></a>
+                                      <li><a href="cat/Van-Hoa.html" class="parent"><span>Văn hoá</span></a>
+                                      <li><a href="cat/Giao-Duc.html" class="parent"><span>Giáo dục</span></a>
+                                      <li><a href="cat/Phap-Luat.html" class="parent"><span>Pháp luật</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thế giới web</span></a>
+               <div>               		<ul>                  <li><a href="cat/Tin-Tuc-Web.html" class="parent"><span>Tin tức web</span></a>
+                                      <li><a href="cat/Tools.html" class="parent"><span>Tools</span></a>
+                                      <li><a href="cat/Website-Huu-Ich.html" class="parent"><span>Website hữu ích</span></a>
+                                      <li><a href="cat/Scripts-Huu-Dung.html" class="parent"><span>Scripts hữu dụng</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Nghệ thuật sống</span></a>
+               <div>               		<ul>                  <li><a href="cat/.html" class="parent"><span>Chia sẻ</span></a>
+                                      <li><a href="cat/Song-Dep.html" class="parent"><span>Sống đẹp</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Công nghệ</span></a>
+               <div>               		<ul>                  <li><a href="cat/San-Pham-Moi.html" class="parent"><span>Sản phẩm mới</span></a>
+                                      <li><a href="cat/.html" class="parent"><span>Vi tính</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Việc làm</span></a>
+               <div>               		<ul> 
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thư giãn</span></a>
+               <div>               		<ul>                  <li><a href="cat/Tho-Hay.html" class="parent"><span>Thơ hay</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thường thức </span></a>
+               <div>               		<ul>                  <li><a href="cat/Meo-Vat.html" class="parent"><span>Mẹo vặt</span></a>
+                                      <li><a href="cat/Suc-Khoe.html" class="parent"><span>Sức khỏe</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+                    <li><a href="#" class="parent"><span>Thiên nhiên</span></a>
+               <div>               		<ul>                  <li><a href="cat/phong-canh.html" class="parent"><span>Phong cảnh</span></a>
+                                      <li><a href="cat/Dong-Vat.html" class="parent"><span>Động vật</span></a>
+                     
+                 </li>
+             </ul></div>
+         </li>
+          <!--<li class="last"><a href="#"><span>level 1</span></a></li>-->
+               </ul>
+   </div>
+	    </div>
+    	    <div id ="content3"><script>
+	$(document).ready(function(e) {
+        $("#btnbinhchon").click(function(){		
+		var idBC=$("#idBC").val();
+		var idPA=-1; 
+		$("[name='idPA']").each(function(){if (this.checked==true)idPA=this.value });//duyet tung phan tu ten la'idPA' neu checked thi lay gia tri cua phan tu do vao idPA 
+		if (idPA==-1) { alert("Bạn chưa chọn phương án nào"); return}
+		var data = "idBC=" + idBC + "&idPA=" + idPA; //alert(data);
+		$("#divbinhchon").load("ketqubinhchon.tco",data).hide().slideDown();//lay du lieu tu kqbc nap vao div binhchon
+});
+
+    });
+</script>
+<div id="divbinhchon">
+	<p class="capption">BÌNH CHỌN</p>
+    <p>Bạn thấy website này thế nào</p>
+    		<p><input type="radio" name="idPA" value="4"/>Rất đẹp</p>
+        
+			<p><input type="radio" name="idPA" value="5"/>Đẹp</p>
+        
+	<input type="hidden" name="idBC" id="idBC" value="2" />
+<p align="center"> <input type="button" value="Bình chọn" id="btnbinhchon"> </p>
+
+
+</div>
+
+    	<div id="userinfo"><br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: include(fuserinfo.php): failed to open stream: No such file or directory in C:\wamp\www\tintuc\home.php on line <i>242</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>152800</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0020</td><td bgcolor='#eeeeec' align='right'>182688</td><td bgcolor='#eeeeec'>include( <font color='#00bb00'>'C:\wamp\www\tintuc\home.php'</font> )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>10</td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: include(): Failed opening 'fuserinfo.php' for inclusion (include_path='.;C:\php\pear') in C:\wamp\www\tintuc\home.php on line <i>242</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>152800</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0020</td><td bgcolor='#eeeeec' align='right'>182688</td><td bgcolor='#eeeeec'>include( <font color='#00bb00'>'C:\wamp\www\tintuc\home.php'</font> )</td><td title='C:\wamp\www\tintuc\trangchu.php' bgcolor='#eeeeec'>..\trangchu.php<b>:</b>10</td></tr>
+</table></font>
+</div>
+    </div>
+        <div id="content4">
+     <style >
+	#tintrongloai #path {
+	background-color:#036;color:#FFF; height:30px; line-height:30px;
+	text-transform:uppercase; font-size:16px;}
+	#tintrongloai .row_tin {
+		border-bottom: solid 1px #000; padding-right:5px; min-height:160px;margin:5px;}
+	#tintrongloai .row_tin img{ margin-right:5px; width:180px; height:100px}
+	#tintrongloai .xemtiep {text-align: right;}
+	#tintrongloai .xemtiep a {color: #990033;text-decoration: none;}
+	#tintrongloai .xemtiep a:hover {color: #006699;text-decoration: underline;}
+	#tintrongloai .tieude{ font-weight:bold; margin-top:5px; margin-bottom:5px;}
+	#tintrongloai .tomtat { text-align:justify; margin-top:5px; margin-bottom:5px;}
+	#tintrongloai .ngay{ margin-top:5px; margin-bottom:5px; color:#003333; font-style:italic}
+	#catenews_left{
+			width:500px;
+			min-height:350px;
+			float:left;
+			display:block;
+			background-color:#06F;
+		
+		}
+		#catenews_left a{display:block;}
+		#catenews_right{ width:287px;float:right;background-color:#0CF;margin-left:3px;text-align:center; 
+			}
+			#catenews_right a {display:block;}
+		/*	#catenews_right img{al}*/
+		
+	
+
+</style>
+
+<div id="tintrongloai">
+	
+	<div id="path">Trang chủ/Công nghệ>Sản phẩm mới</div>
+				
+				                   <div class="row_tin">
+                  <a href="news/Firefox-5.0-Chao-Doi---An-Tuong-Trinh-Duyet-“Sieu-Toc”.html"> <p class="tieude">Firefox 5.0 chào đời - Ấn tượng trình duyệt “siêu tốc” </p></a>
+                   <p class="ngay">
+                   <img src="/tintuc/dataupload/images/2011-06-22 09-32-43--Firefox5Final1_b4805.jpg" width="150" height="100" align="left">
+                   Ngày đăng: 22/06/2011. 
+                   Số lần xem: 0 </p>
+                   <p class="tomtat"> (Dân trí) - Đúng như dự định ban đầu, Mozilla đã cho trình làng Firefox 5.0 bản chính thức vào ngày 22/6 (theo giờ Việt Nam), chỉ 3 tháng sau khi Firefox 4.0 bản cuối cùng được giới thiệu. </p>
+                   <div class="xemtiep"> <a href="news/Firefox-5.0-Chao-Doi---An-Tuong-Trinh-Duyet-“Sieu-Toc”.html">Xem chi tiết</a> </div>
+                </div>
+                                   <div class="row_tin">
+                  <a href="news/Windows-Phone-7-Cua-Nokia-"Len-Ke"-Trong-Nam-Nay.html"> <p class="tieude">Windows Phone 7 của Nokia "lên kệ" trong năm nay </p></a>
+                   <p class="ngay">
+                   <img src="/tintuc/dataupload/images/2011-06-20 10-39-59--msnokiapicon1_11ca1.jpg" width="150" height="100" align="left">
+                   Ngày đăng: 20/06/2011. 
+                   Số lần xem: 0 </p>
+                   <p class="tomtat"> (Dân trí) - Theo dự định ban đầu, sản phẩm đầu tiên sử dụng nền tảng Windows Phone 7 của Nokia phải đến 2012 mới chính thức trình làng. Tuy nhiên, có vẻ như Nokia đang muốn tăng tốc, khi quyết định cho ra mắt smartphone Windows Phone 7 ngay trong năm nay. </p>
+                   <div class="xemtiep"> <a href="news/Windows-Phone-7-Cua-Nokia-"Len-Ke"-Trong-Nam-Nay.html">Xem chi tiết</a> </div>
+                </div>
+                                   <div class="row_tin">
+                  <a href="news/Ban-Thu-Nghiem-Cuoi-Cung-Cua-Firefox-5.0-Da-Xuat-Hien.html"> <p class="tieude">Bản thử nghiệm cuối cùng của Firefox 5.0 đã xuất hiện </p></a>
+                   <p class="ngay">
+                   <img src="/tintuc/dataupload/images/2011-06-20 10-39-56--firefox5rc1_acb95.jpg" width="150" height="100" align="left">
+                   Ngày đăng: 20/06/2011. 
+                   Số lần xem: 1 </p>
+                   <p class="tomtat"> (Dân trí) - Phiên bản (Release candidate) RC, phiên bản thử nghiệm cuối cùng của Firefox 5.0 đã được trình làng, đánh dấu ngày xuất hiện không xa của phiên bản chính thức của phiên bản trình duyệt web đang rất được trông đợi hiện nay. </p>
+                   <div class="xemtiep"> <a href="news/Ban-Thu-Nghiem-Cuoi-Cung-Cua-Firefox-5.0-Da-Xuat-Hien.html">Xem chi tiết</a> </div>
+                </div>
+                                   <div class="row_tin">
+                  <a href="news/Nokia-Lam-Dien-Thoai-Cau-Hinh-Cao-Tren-Nen-Tang-Don-Gian.html"> <p class="tieude">Nokia làm điện thoại cấu hình cao trên nền tảng đơn giản </p></a>
+                   <p class="ngay">
+                   <img src="/tintuc/dataupload/images/2011-06-20 10-39-03--Twitter.jpg" width="150" height="100" align="left">
+                   Ngày đăng: 20/06/2011. 
+                   Số lần xem: 0 </p>
+                   <p class="tomtat"> Theo phát ngôn từ một quan chức cấp cao của Nokia ở Argentina trên Twitter, công ty Phần Lan đang sản xuất điện thoại dùng chip tốc độ 1 GHz nhưng lại sử dụng nền tảng S40 vốn có trong các máy thời trang. </p>
+                   <div class="xemtiep"> <a href="news/Nokia-Lam-Dien-Thoai-Cau-Hinh-Cao-Tren-Nen-Tang-Don-Gian.html">Xem chi tiết</a> </div>
+                </div>
+                                   <div class="row_tin">
+                  <a href="news/Dien-Thoai-Doc-Dao-Toa-Huong-Thom-Cua-Fujistu.html"> <p class="tieude">Điện thoại độc đáo tỏa hương thơm của Fujistu </p></a>
+                   <p class="ngay">
+                   <img src="/tintuc/dataupload/images/2011-06-17 18-41-56--Fujistu-2.jpg" width="150" height="100" align="left">
+                   Ngày đăng: 17/06/2011. 
+                   Số lần xem: 0 </p>
+                   <p class="tomtat"> Công ty Nhật trình làng điện thoại F-022 kiểu dáng thời trang, khả năng chống nước và có thể tỏa ra hương thơm trong thời gian dài. </p>
+                   <div class="xemtiep"> <a href="news/Dien-Thoai-Doc-Dao-Toa-Huong-Thom-Cua-Fujistu.html">Xem chi tiết</a> </div>
+                </div>
+                                
+                
+                
+                <p class="pagination_news">
+        <a href='cat/San-Pham-Moi.html'>Trang đầu</a><a href='cat/San-Pham-Moi/1/'>Trang Trước</a><a href = 'cat/San-Pham-Moi/1/'>1</a><span>2</span><a href = 'cat/San-Pham-Moi/3/'>3</a><a href = 'cat/San-Pham-Moi/4/'>4</a><a href='cat/San-Pham-Moi/3/'>Trang Kế</a><a href='cat/San-Pham-Moi/4/'>Trang Cuối</a>        </p>
+
+			
+</div>
+
+
+      
+    </div>
+    <div id="footer">footer</div>
+
+
+</div>
+
+</body>
+</html>
